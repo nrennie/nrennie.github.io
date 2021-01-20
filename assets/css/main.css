@@ -1762,7 +1762,21 @@ input, select, textarea {
     padding: 40px;
     background-color: rgba(250, 250, 250, 0.5);
     transition: all 0.5s;
+	text-align: center;
 }
+	.service-item .row .column {
+		text-align: center;
+	}
+	
+	.column {
+		float: center;
+		width: 50%;
+	}
+	
+	.column2 {
+		float: left;
+		width: 25%;
+	}
 
 	.service-item:hover {
 		background-color: rgba(250, 250, 250, 1);
@@ -1861,6 +1875,12 @@ input, select, textarea {
 		font-size: 14pt;
 		line-height: 1.5em;
 	}
+	
+	ul.skills {
+		display: inline-block; 
+		text-align: left;
+	}
+	
 
 		ul li {
 			padding-left: 0.5em;
@@ -2532,6 +2552,7 @@ input, select, textarea {
 			#nav ul li a {
 				padding: 0.5em 1.25em 0.5em 1.25em;
 			}
+
 
 			#headerToggle {
 				-moz-backface-visibility: hidden;
