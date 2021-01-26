@@ -1763,7 +1763,16 @@ input, select, textarea {
     background-color: rgba(250, 250, 250, 0.5);
     transition: all 0.5s;
 	text-align: center;
-}
+	}
+	
+	.service-item2 {
+    margin-bottom: 5px;
+    padding: 40px;
+    background-color: rgba(138, 186, 174, 0.3);
+    transition: all 0.5s;
+	text-align: center;
+	}
+	
 	.service-item .row .column {
 		text-align: center;
 	}
@@ -1781,6 +1790,10 @@ input, select, textarea {
 	.service-item:hover {
 		background-color: rgba(250, 250, 250, 1);
 	}
+	
+	.service-item2:hover {
+		background-color: rgba(138, 186, 174, 0.5);
+	}
 
 	.service-item:hover h4 {
 		color: #1e1e1e;
@@ -1791,6 +1804,18 @@ input, select, textarea {
 	}
 
 	.service-item:hover ul {
+		color: #4a4a4a;
+	}
+	
+	.service-item2:hover h4 {
+		color: #1e1e1e;
+	}
+
+	.service-item2:hover p {
+		color: #4a4a4a;
+	}
+
+	.service-item2:hover ul {
 		color: #4a4a4a;
 	}
 		
