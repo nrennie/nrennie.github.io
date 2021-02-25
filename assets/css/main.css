@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
 
 ol, ul {
@@ -228,6 +229,92 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+	}
+	
+	.centervid {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		display: block
+	}
+	
+	.boxed {
+	  background-color: rgba(138, 186, 174, 0.3);
+	  padding: 10px 10px 0px 10px;
+	  margin-right:15px;
+	  position: relative;
+	}
+	
+	.contact {
+	  margin-right:15px;
+	}
+	
+	.flex-container{
+		width: 100%;
+		min-height: 250px;
+		margin: 0 auto;
+		display: -webkit-flex; /* Safari */		
+		display: flex; /* Standard syntax */
+	}
+	.flex-container .boxed{
+		padding: 10px 10px 10px 10px;
+		-webkit-flex: 1; /* Safari */
+		-ms-flex: 1; /* IE 10 */
+		flex: 1; /* Standard syntax */
+	}
+	
+	.flex-container2{
+		width: 100%;
+		min-height: 5px;
+		margin: 0 auto;
+		display: -webkit-flex; /* Safari */		
+		display: flex; /* Standard syntax */
+	}
+	.flex-container2 .boxed{
+		padding: 0px 10px 10px 10px;
+		margin-top: 0;
+		-webkit-flex: 1; /* Safari */
+		-ms-flex: 1; /* IE 10 */
+		flex: 1; /* Standard syntax */
+	}
+	
+	
+	/* Style the button that is used to open and close the collapsible content */
+	.collapsible {
+	  background-color: rgba(138, 186, 174, 0.3);
+	  color: #444;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 14pt;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	.active, .collapsible:hover {
+	  background-color: #2e856e;;
+	}
+
+	/* Style the collapsible content. Note: hidden by default */
+	.content {
+	  padding: 0 18px;
+	  display: none;
+	  overflow: hidden;
+	  background-color: #f1f1f1;
+	}
+	
+	.collapsible:after {
+	  content: '\02795'; /* Unicode character for "plus" sign (+) */
+	  font-size: 13px;
+	  color: white;
+	  float: right;
+	  margin-left: 5px;
+	}
+
+	.active:after {
+	  content: "\2796"; /* Unicode character for "minus" sign (-) */
 	}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -434,7 +521,7 @@ input, select, textarea {
 		}
 
 			.row.gtr-25 > * {
-				padding: 10px 0 0 10px;
+				padding: 10px 0 0 0px;
 			}
 
 			.row.gtr-25.gtr-uniform {
@@ -451,7 +538,7 @@ input, select, textarea {
 		}
 
 			.row.gtr-50 > * {
-				padding: 20px 0 0 20px;
+				padding: 20px 0 0 0px;
 			}
 
 			.row.gtr-50.gtr-uniform {
@@ -468,7 +555,7 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 40px 0 0 40px;
+				padding: 40px 0 0 0px;
 			}
 
 			.row.gtr-uniform {
@@ -485,7 +572,7 @@ input, select, textarea {
 		}
 
 			.row.gtr-150 > * {
-				padding: 60px 0 0 60px;
+				padding: 60px 0 0 0px;
 			}
 
 			.row.gtr-150.gtr-uniform {
@@ -849,6 +936,7 @@ input, select, textarea {
 
 				.row > .off-6-normal {
 					margin-left: 50%;
+					margin-right: 50%;
 				}
 
 				.row > .col-7-normal {
@@ -1837,12 +1925,6 @@ input, select, textarea {
 	background-color: 	#fff;
 }
 
-.centervid {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
-}
-
 /* Image */
 
 	.image {
@@ -1902,7 +1984,6 @@ input, select, textarea {
 	}
 	
 	ul.skills {
-		display: inline-block; 
 		text-align: left;
 	}
 	
@@ -2092,6 +2173,7 @@ input, select, textarea {
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		margin-right:15px;
 	}
 
 		.item header {
