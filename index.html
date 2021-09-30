@@ -178,6 +178,12 @@
 											<h3>DuBois Challenge</h3>
 										</header>
 									</article>
+									<article class="item">
+										<a href="#" class="image fit" data-toggle="modal" data-target="#PollutionModal"><img src="images/Pollution/Aberdeen_weekend.jpg" alt="" /></a>
+										<header>
+											<h3>UK Air Pollution</h3>
+										</header>
+									</article>
 								</div>
 								
 								<div class="col-4 col-12-mobile">
@@ -453,13 +459,13 @@
 							<div class="modal-body">
 							
 									<span> 
-									<h5 align="left"> Mathematical Consultant, Smith Institute (August 2021 - Present) </h5>
+									<h5 align="left"> Mathematical Consultant, Smith Institute (Aug 2021 - Present) </h5>
 									<p align="left"> I work with clients in a wide range of industries to understand their needs and design the 
 									mathematical and statistical solutions that best address them. </p>  <br> 
 									</span> 
 									
 									<span> 
-									<h5 align="left"> Graduate Teaching Assistant, Lancaster University (Oct 2018 - June 2021)</h5>
+									<h5 align="left"> Graduate Teaching Assistant, Lancaster University (Oct 2018 - Jun 2021)</h5>
 									<p align="left"> As a graduate teaching assistant, I tutor workshops and tutorials in the Management 
 									School/Department of Mathematics and Statistics at Lancaster University, helping to better understand 
 									and feel more confident in applying the materials taught in lectures. Modules include: </p> 
@@ -478,11 +484,7 @@
 										<b> 2018-2019 </b>
 										<li> MSCI242: Spreadsheet Modelling for Management </li>
 										<li> MSCI102: Introduction to Operations Management  </li>
-									</ul> <br> 
-									</span> 
-			
-									<span> 
-									<h5 align="left"> Associate Fellow of the Higher Education Academy (July 2020 - Present) </h5>
+									</ul> 
 									<p align="left"> To support my teaching development, I undertook the Associate Teacher Programme at Lancaster Teaching. Throughout the course, 
 									I studied pedagogical literature, discuessed common teachign issues with colleagues in a range of disciplines, 
 									and analysed both my own teaching practices and the practices of others. After completing an assessed portfolio 
@@ -490,7 +492,7 @@
 									</span> 
 			
 									<span> 
-									<h5 align="left"> Marketing and Publicity, 44<sup>th</sup> Research Students’ Conference in Probability and Statistics (January 2020 - Present) </h5>
+									<h5 align="left"> Marketing and Publicity, 44<sup>th</sup> Research Students’ Conference in Probability and Statistics (Jan 2020 - Jul 2021) </h5>
 									<p align="left"> The Research Students’ Conference (RSC) in Probability and Statistics is an annual conference for 
 									post-graduate research students in all areas of probability and statistics. Organised and hosted by PhD students, 
 									the conference provides a friendly environment for students to meet others with similar interests. In my role in marketing and publicity, 
@@ -498,7 +500,7 @@
 									</span> 
 									
 									<span> 
-									<h5 align="left"> Intern Supervision, Lancaster University (July 2019 - September 2019) </h5>
+									<h5 align="left"> Intern Supervision, Lancaster University (Jul 2019 - Sep 2019) </h5>
 									<p align="left"> During the summer term in 2019, I supervised an intern in statistics and operational research throughout 
 									an 8 week project. I designed the project, provided support in finding relevant literature and programming, and met regularly 
 									with the intern to assess their progress and adapt the project accordingly. The project culminated with the intern presenting 
@@ -838,6 +840,143 @@
 			</div>
 		</div>
 	</div>	
+	
+<div class="modal fade" id="PollutionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title" id="ModalTitle" style="color:#2e856e;">Air Pollution Analysis</h3>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" >&times;</span>
+									</button>
+							</div>
+							<div class="modal-body">
+							<p style="text-align:left;"> 
+								During my PhD, my research focused on developing methods to identify outlier demand in 
+								booking patterns for trains in railway networks. To demonstrate that these statistical 
+								methods are also applicable in other areas, I started to analyse air pollution data across 
+								the United Kingdom. The aim is to identify days with abnormal pollution levels. The data comes from Defra's Automatic Urban and Rural Network (AURN), 
+								which reports the level of nitrogen dioxide in the air every hour at 187 different locations. 
+								The data can be downloaded from 
+								<a href="https://uk-air.defra.gov.uk/data/data_selector_service" target="_blank"> uk-air.defra.gov.uk/data/data_selector_service </a>.
+								For this analysis, I considered data from 2014 to 2018.
+							</p>
+
+							<div class="col-12 col-12-mobile"  style="width:50%;margin: auto;">
+									<article class="item">
+										<img src="images/Pollution/Aberdeen_stations_map.jpg" alt="" class="image fit">
+										<header>
+											<h3 style="text-align:center;">AURN stations</h3>
+										</header>
+									</article>
+							</div>
+
+							<br>
+							<p style="text-align:left;"> 
+								I started by considering the data in a single station - Aberdeen. The nitrogen dioxide levels 
+								follow a similar pattern each day, with higher levels around rush hour in the morning and evening. <br> <br>
+
+								Functional analysis treats the pollution pattern for each day as an observation of a function over time.
+								This allows us to compare the differences between patterns on different days, without complications from 
+								the varying pollution levels throughout each day.
+
+							</p>
+
+							<div class="col-12 col-12-mobile"  style="width:50%;margin: auto;">
+									<article class="item">
+										<img src="images/Pollution/Aberdeen.jpg" alt="" class="image fit"/>
+										<header>
+											<h3 style="text-align:center;">Nitrogen dioxide levels in Aberdeen</h3>
+										</header>
+									</article>
+							</div>
+
+							<br>
+							<p style="text-align:left;"> 
+								The higher levels of pollution around 8am and 6pm are most likely caused by people 
+								travelling to work. This raises the question of whether pollution levels are lower on weekends, when
+								there are generally fewer people travelling to work. I considered whether there were different pollution 
+								patterns on different days of the week, specifically weekdays vs. weekends. <br> <br>
+
+								To test this formally, a functional ANOVA test can be applied. This tests whether the average pollution pattern
+								on a weekday is significantly different from the avergage pollution pattern on a weekend. The test returns the probability
+								that, if the two pollution patterns were equal, the observed patterns would be this different. For this analysis, the probability was 0. Therefore, we can conclude there is a significant 
+								difference in the pollution levels on weekdays compared to weekends. We will analyse weekdays and weekends separately. 
+							</p>
+
+							<div class="col-12 col-12-mobile"  style="width:50%;margin: auto;">
+									<article class="item">
+										<img src="images/Pollution/Aberdeen_weekend.jpg" alt="" class="image fit"/>
+										<header>
+											<h3 style="text-align:center;">Nitrogen dioxide levels weekdays vs. weekends</h3>
+										</header>
+									</article>
+							</div>
+
+							<br>
+							<p style="text-align:left;"> 
+								To describe how normal (or abnormal) the pollution pattern for each day is, we calculate the functional depth. A depth 
+								measurement attributes a sensible ordering to observations, such that observations which are close to average have higher 
+								depth and those far from the average have lower depth. Days which have very low depth can be classified as outliers.
+								Functional depth takes into account the abnormality both in the magnitude (for example, overall higher pollution levels throughout the day), and 
+								shape (for example, pollution levels peak earlier in the day than normal) of the pollution pattern.
+							</p>
+
+							<div class="col-12 col-12-mobile"  style="width:50%;margin: auto;">
+									<article class="item">
+										<img src="images/Pollution/Aberdeen_depths_weekend.jpg" alt="" class="image fit"/>
+										<header>
+											<h3 style="text-align:center;">Functional depths for weekends</h3>
+										</header>
+									</article>
+							</div>
+
+							<br>
+							<p style="text-align:left;"> 
+								A threshold is then calculated for the functional depths. If the functional depth for a given day is below that 
+								threshold, the day is classified as an outlier.
+							</p>
+
+							<div class="col-12 col-12-mobile"  style="width:50%;margin: auto;">
+									<article class="item">
+										<img src="images/Pollution/Aberdeen_outliers.jpg" alt="" class="image fit"/>
+										<header>
+											<h3 style="text-align:center;">Outliers detected in nitrogen dioxide levels</h3>
+										</header>
+									</article>
+							</div>
+
+							<br>
+							<p style="text-align:left;"> 
+								The days which were detected as outliers in this analysis occur around early November, 
+								late December, and early January. Although this may suggest there are seasonal trends with generally higher 
+								pollution levels in winter, further investigation found this not to be the case. One possible explanation
+								for why these dates were classified as having outlying levels of nitrogen dioxide, is fireworks. Fireworks
+								are commonly set off on Bonfire Night, around Christmas, and New Year's Eve. Fireworks have been shown to 
+								contribute to elevated levels of gaseous pollutants, including nitrogen dioxide. <br> <br>
+							</p>
+
+							<h2 style="text-align:center;"> 
+								Part 2 coming soon!
+							</h2>
+
+							<p style="text-align:center;"> 
+								The code for this project can be found at:
+								<a href="https://github.com/nrennie/air_pollution" target="_blank"> github.com/nrennie/air_pollution </a>.
+							</p>
+
+
+
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="green-button" data-dismiss="modal">Close</button>
+							</div>
+			</div>
+		</div>
+	</div>	
+	
+			
 			
 	<div class="modal fade" id="DuBoisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 		<div class="modal-dialog modal-xl" role="document">
