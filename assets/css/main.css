@@ -172,6 +172,12 @@ input, select, textarea {
 	em, i {
 		font-style: italic;
 	}
+	
+	code {
+		text-decoration: none;
+		color: #2e856e;
+		outline: 0;
+	}
 
 	a {
 		text-decoration: none;
