@@ -1,0 +1,56 @@
+---
+title: "Work"
+---
+
+## Publications
+* Detecting demand outliers in transport systems </br> 
+N. Rennie | PhD Thesis | 2021 </br> 
+[eprints.lancs.ac.uk/2021renniephd.pdf](https://eprints.lancs.ac.uk/id/eprint/160845/1/2021renniephd.pdf) 
+* Identifying and responding to outlier demand in revenue management </br> 
+N. Rennie, C. Cleophas, A.M. Sykulski et al. | European Journal of Operational Research | 2021 </br> 
+doi: [doi.org/10.1016/j.ejor.2021.01.002](https://doi.org/10.1016/j.ejor.2021.01.002) 
+* Detecting outlying demand in multi-leg bookings for transportation networks </br>
+N. Rennie, C. Cleophas, A.M. Sykulski et al. | (Under revision) | 2021 </br> 
+pre-print: [arxiv.org/abs/2104.04157](https://arxiv.org/abs/2104.04157)
+* Analysing and visualising bike sharing demand with outliers </br> 
+N. Rennie, C. Cleophas, A.M. Sykulski et al. | Under revision | 2021
+* We're not getting any younger! Or should that be older? </br> 
+N. Rennie | Significance | Upcoming online | 2021
+
+
+## Awards
+* Finalist of the 2021 Statistical Excellence Award for Early-Career Writing | Significance and the RSS Young Statisticians Section | Jul 2021
+* Nick Smith Prize for Research Excellence | Lancaster University | Aug 2020
+* LUMS  Research  Conference  Doctoral  Poster  Competition  (3<sup>rd</sup> place) | Lancaster University | Sep 2019
+
+
+## Conference Talks
+* RSS International Conference 2021 | University of Manchester | Sep 2021 
+* 31<sup>st</sup> European Conference on Operational Research (EURO) | University of West Attica (Online) | Jul 2021
+* 3<sup>rd</sup> IMA and OR Society Conference on Mathematics of Operational Research | Aston University (Online) | Apr 2021
+* 5<sup>th</sup> AIRO Young Workshop | University of Naples Federico II (Online) | Feb 2021 
+* STOR-i Workshop on Prediction and Optimisation (Cancelled) | Lancaster University | Apr 2020
+* STOR-i Annual Conference | Lancaster University | Jan 2020 
+* Lancaster University Management School Research Conference | Lancaster University | Sep 2019 | (Poster - 3<sup>rd</sup> place) 
+* European Working Group on Pricing & Revenue Management | Erasmus University Rotterdam | Aug 2019 
+* 30<sup>th</sup> European Conference on Operational Research (EURO) | UCD | Jun 2019  
+* STOR-i Annual Conference | Lancaster University | Jan 2019
+
+
+## Professional Development Courses
+* Resilience and Self-Doubt | Tracey Stead & Lancaster University | Nov 2020
+* Associate Teacher Program | Lancaster University | Jan - Jul 2020 </br>
+Qualified as an [Associate Fellow of the Higher Education Academy (Advance HE)](https://www.advance-he.ac.uk/fellowship)
+* STOR-i Workshop on Time Series and Spatial Statistics | Lancaster University | May 2020
+* Storytelling Training Course | Lancaster University | May 2020
+* APTS: Design of Experiments & Flexible Regression | Oxford University | Sep 2019
+* NATCOR: Simulation | Loughborough University | Jul 2019
+* NATCOR: Stochastic Modelling | Lancaster University | Apr 2019
+
+
+## Other
+* Volunteer Contributor | Viz For Social Good | Sep 2021 - Present </br> 
+Leveraging the power of data visualisation to support non-profit organisations.
+* 44<sup>th</sup> Research Students' Conference in Probability and Statistics | Member of the Organising Committee | Jan 2020 - Jul 2021 </br> 
+In my role in marketing and publicity, I designed the conference website, produced marketing materials, and collaborated with universities to attract postgraduate participants.
+

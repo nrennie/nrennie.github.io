@@ -1,0 +1,33 @@
+---
+title: "About"
+---
+
+Nicola Rennie is a statistician and data scientist, passionate about using R to solve problems. She currently works as a Data Scientist at Jumping Rivers, having previously been a Mathematical Consultant at the Smith Institute. Nicola completed her PhD in statistics and operational research at STOR-i CDT at Lancaster University, where she researched the use of outlier detection in decision support systems in collaboration with Deutsche Bahn, Lufthansa, and Swiss Airlines.
+
+
+## Experience
+
+Jumping Rivers | Data Scientist | Nov 2021 - Present
+
+Smith Institute | Mathematical Consultant | Aug 2021 - Nov 2021
+
+Lancaster University | Graduate Teaching Assistant | Oct 2018 - Jun 2021
+
+
+## Education
+
+Lancaster University | PhD in Statistics and Operational Research | Oct 2018 - Oct 2021
+
+Lancaster University | MRes in Statistics and Operational Research | Oct 2017 - Oct 2018
+
+University of St Andrews | Bsc (Hons) in Mathematics | Sep 2014 - Jun 2017
+
+
+## Skills
+
+R | Python | Markdown | LaTeX | Git
+
+Forecasting | Classification | Outlier detection | Data visualisation
+
+
+

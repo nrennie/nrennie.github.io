@@ -1,0 +1,76 @@
+---
+title: "DuBois Challenge"
+description: |
+  The DuBois Challenge is part of a celebration of the data visualization legacy of W.E.B DuBois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools.
+author:
+  - name: Nicola Rennie
+preview: images/cover.png
+date: 2021-05-04
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+The DuBois Challenge is part of a celebration of the data visualization legacy of W.E.B DuBois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools. Check out the challenge [here](https://github.com/ajstarks/dubois-data-portraits/blob/master/challenge/README.md). </br> </br>
+
+Code available at: [github.com/nrennie/dubois_challenge](https://github.com/nrennie/dubois_challenge).
+
+## Challenge 1
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_01.jpg", "images/original_01.jpg"))  
+```
+
+## Challenge 2
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_02.jpg", "images/original_02.jpg"))  
+```
+
+## Challenge 3
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_03.jpg", "images/original_03.jpg"))  
+```
+
+## Challenge 4
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_04.jpg", "images/original_04.jpg"))  
+```
+
+## Challenge 5
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_05.jpg", "images/original_05.jpg"))  
+```
+
+## Challenge 6
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_06.jpg", "images/original_06.jpg"))  
+```
+
+## Challenge 7
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_07.jpg", "images/original_07.jpg"))  
+```
+
+## Challenge 8
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_08.jpg", "images/original_08.jpg"))  
+```
+
+## Challenge 9
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_09.jpg", "images/original_09.jpg"))  
+```
+
+## Challenge 10
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/challenge_10.jpg", "images/original_10.jpg"))  
+```

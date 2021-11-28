@@ -1,0 +1,24 @@
+---
+title: "Nicola Rennie"
+image: "nicola.jpg"
+color1: "#303030"
+color2: "#9bbdbe"
+angle: 90
+site: distill::distill_website
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/in/nicola-rennie-076511b3/"
+  - label: Twitter
+    url: "https://twitter.com/nrennie35"
+  - label: GitHub
+    url: "https://github.com/nrennie"
+  - label: Email
+    url: "mailto:nrennie35@gmail.com"
+output:
+  postcards::onofre
+---
+ 
+Nicola Rennie is a statistician and data scientist, passionate about using R to solve problems. She currently works as a Data Scientist at Jumping Rivers, having previously been a Mathematical Consultant at the Smith Institute. 
+
+Nicola completed her PhD in statistics and operational research at STOR-i CDT at Lancaster University, where she researched the use of outlier detection in decision support systems in collaboration with Deutsche Bahn, Lufthansa, and Swiss Airlines.
+

@@ -1,0 +1,22 @@
+---
+title: "Generative aRt"
+description: |
+  Generative art refers to algorithmically determined computer generated artwork.
+author:
+  - name: Nicola Rennie
+date: 2021-10-28
+preview: images/preview.jpeg
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+Generative art refers to algorithmically determined computer generated artwork. To share my generative art (and to practice building an R package from scratch) I developed an R package called aRt which is available on GitHub at: [github.com/nrennie/aRt](https://github.com/nrennie/aRt).
+
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/circular_n10.jpeg", "images/vortex_n25_r.jpeg"))  
+```
+```{r, echo=FALSE,out.width="49%",out.height="49%",fig.show='hold'} 
+knitr::include_graphics(c("images/boxes_n100_p1.jpeg", "images/bullseye_1234.jpeg"))  
+```

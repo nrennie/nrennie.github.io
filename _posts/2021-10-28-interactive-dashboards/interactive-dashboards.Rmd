@@ -1,0 +1,21 @@
+---
+title: "Interactive Dashboards"
+description: |
+  Interactive RShiny dashboards can be used to allow users to monitor and examine business performance at a glance.
+author:
+  - name: Nicola Rennie
+date: 2021-10-28
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+I developed an RShiny dashboard which can be used to detect outliers in booking patterns for transport networks. It allows the user to change which part of the network they are looking at, and how many legs of the network they look at. It also gives the user a probability for each outlier, and the user can filter the results by outlier probability, number of outliers, and whether or not the departure is upcoming.
+
+This application is currently still in development. For a sneak preview, watch the video below:
+
+<video width="320" height="240" controls>
+  <source src="videos/RShiny_Dashboard.mp4" type="video/mp4">
+</video>
+
