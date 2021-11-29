@@ -4,6 +4,7 @@ description: |
   Nicola Rennie
 output_dir: "docs"
 theme: theme.css
+favicon: images/favicon.ico
 navbar:
   right:
     - text: "Home"
