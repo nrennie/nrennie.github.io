@@ -15,6 +15,15 @@ Viz For Social Good volunteers create informative and impactful data visualizati
 
 Code available at: [github.com/nrennie/Viz_For_Social_Good](https://github.com/nrennie/Viz_For_Social_Good)
 
+## VFSG: Visualize Our Community
+
+Non-profits around the world are driving positive social change but some of them lack the in-house resources to effectively tell their story with the data they have.  Viz For Social Good (VFSG) helps non-profits thrive by connecting talented community members with organizations in need of data visualization skill sets. 
+
+```{r, echo=FALSE,out.width="75%",out.height="75%",fig.show='hold', fig.align="center"} 
+knitr::include_graphics(c("images/visualize_our_community.png"))  
+```
+
+In November 2021, Viz For Social Good ran a community poll, the results of which will help shape their diversity & inclusion efforts. 224 people responded from 38 different countries. 
 
 ## Sunny Street
 
