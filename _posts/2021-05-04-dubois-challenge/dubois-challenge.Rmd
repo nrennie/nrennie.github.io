@@ -4,7 +4,7 @@ description: |
   The DuBois Challenge is part of a celebration of the data visualization legacy of W.E.B DuBois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools.
 author:
   - name: Nicola Rennie
-preview: images/cover.png
+preview: images/cover.jpg
 date: 2021-05-04
 output:
   distill::distill_article:
