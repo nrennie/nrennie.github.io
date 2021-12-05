@@ -10,7 +10,7 @@ N. Rennie | PhD Thesis | 2021 </br>
 N. Rennie, C. Cleophas, A.M. Sykulski et al. | European Journal of Operational Research | 2021 </br> 
 doi: [doi.org/10.1016/j.ejor.2021.01.002](https://doi.org/10.1016/j.ejor.2021.01.002) 
 * Detecting outlying demand in multi-leg bookings for transportation networks </br>
-N. Rennie, C. Cleophas, A.M. Sykulski et al. | (Under revision) | 2021 </br> 
+N. Rennie, C. Cleophas, A.M. Sykulski et al. | Under revision | 2021 </br> 
 pre-print: [arxiv.org/abs/2104.04157](https://arxiv.org/abs/2104.04157)
 * Analysing and visualising bike sharing demand with outliers </br> 
 N. Rennie, C. Cleophas, A.M. Sykulski et al. | Under revision | 2021
