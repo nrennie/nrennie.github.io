@@ -14,7 +14,7 @@ links:
     url: "https://github.com/nrennie"
   - label: Email
     url: "mailto:nrennie35@gmail.com"
-favicon: favicon.ico
+favicon: images/favicon.ico
 output:
   postcards::onofre
 ---
