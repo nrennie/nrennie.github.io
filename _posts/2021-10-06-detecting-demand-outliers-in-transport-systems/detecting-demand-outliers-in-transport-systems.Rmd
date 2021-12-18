@@ -6,6 +6,10 @@ author:
   - name: Nicola Rennie
     url: {}
 date: 2021-10-06
+twitter:
+  site: "@nrennie35"
+base_url: https://nrennie.github.io
+creative_commons: CC BY
 preview: images/db.png
 output:
   distill::distill_article:

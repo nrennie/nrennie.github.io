@@ -5,6 +5,10 @@ description: |
 author:
   - name: Nicola Rennie
 date: 2021-09-13
+twitter:
+  site: "@nrennie35"
+base_url: https://nrennie.github.io
+creative_commons: CC BY
 preview: images/sunny_street.png
 output:
   distill::distill_article:
