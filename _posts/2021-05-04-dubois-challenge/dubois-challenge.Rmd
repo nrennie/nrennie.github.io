@@ -6,6 +6,9 @@ author:
   - name: Nicola Rennie
 preview: images/cover.jpg
 date: 2021-05-04
+twitter:
+  site: "@nrennie35"
+base_url: https://nrennie.github.io
 output:
   distill::distill_article:
     self_contained: false

@@ -107,7 +107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","listing","output"]}},"value":[{"type":"character","attributes":{},"value":["Blog"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1922,6 +1922,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
    .distill-site-header .title {
+      font-size: 18px;
+      min-width: 150px;
       display: none;
     }
 
@@ -2123,6 +2125,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">Nicola Rennie</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="work.html">Work</a>
+<a href="blog.html">Blog</a>
+<a href="Nicola_Rennie_CV_Download_Link.html">CV</a>
+</div>
+<div class="nav-right">
 <a href="https://www.linkedin.com/in/nicola-rennie-076511b3/">
 <i class="fa fa-linkedin" aria-hidden="true"></i>
 </a>
@@ -2135,13 +2144,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="mailto:nrennie35@gmail.com">
 <i class="fa fa-envelope" aria-hidden="true"></i>
 </a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="work.html">Work</a>
-<a href="blog.html">Blog</a>
-<a href="Nicola_Rennie_CV_Download_Link.html">CV</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2285,6 +2287,23 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Blog">Blog</h1>
+<a href="posts/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 18, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Nicola Rennie</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/images/final_plot.jpeg"/>
+</div>
+<div class="description">
+<h2>Thinking about #TidyTuesday (and the Spice Girls)</h2>
+<div class="dt-tags"></div>
+<p>Earlier this week, whilst curating for @WeAreRLadies, I tweeted a thread on my thought process for this week's #TidyTuesday challenge. This blog post expands on the thoughts in that thread.</p>
+</div>
+</a>
 <a href="posts/2021-12-01-30-day-map-challenge-2021/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
@@ -2339,7 +2358,7 @@ function init_posts_list() {
 <a href="posts/2021-05-04-dubois-challenge/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
-<div class="publishedDate">May 4, 2021</div>
+<div class="publishedDate">May 3, 2021</div>
 <div class="dt-authors">
 <div class="dt-author">Nicola Rennie</div>
 </div>
@@ -2358,7 +2377,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Blog</h1>
