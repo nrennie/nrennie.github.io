@@ -5,6 +5,9 @@ color1: "#303030"
 color2: "#9bbdbe"
 angle: 90
 site: distill::distill_website
+twitter:
+  site: "@nrennie35"
+base_url: https://nrennie.github.io
 links:
   - label: LinkedIn
     url: "https://linkedin.com/in/nicola-rennie-076511b3/"

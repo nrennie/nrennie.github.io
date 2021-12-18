@@ -5,6 +5,8 @@ description: |
 output_dir: "docs"
 theme: theme.css
 favicon: images/favicon.ico
+twitter:
+  site: "@nrennie35"
 navbar:
   left:
     - text: "Home"
