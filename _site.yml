@@ -5,6 +5,7 @@ description: |
 output_dir: "docs"
 theme: theme.css
 favicon: images/favicon.ico
+base_url: https://nrennie.github.io
 twitter:
   site: "@nrennie35"
 navbar:
