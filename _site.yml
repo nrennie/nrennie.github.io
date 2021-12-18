@@ -7,15 +7,6 @@ theme: theme.css
 favicon: images/favicon.ico
 navbar:
   left:
-    - icon: fa fa-linkedin
-      href: https://www.linkedin.com/in/nicola-rennie-076511b3/
-    - icon: fa fa-twitter
-      href: https://twitter.com/nrennie35
-    - icon: fa fa-github
-      href: https://github.com/nrennie
-    - icon: fa fa-envelope
-      href: mailto:nrennie35@gmail.com
-  right:
     - text: "Home"
       href: index.html
     - text: "About"
@@ -26,6 +17,16 @@ navbar:
       href: blog.html
     - text: "CV"
       href: Nicola_Rennie_CV_Download_Link.html
+  right:
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/nicola-rennie-076511b3/
+    - icon: fa fa-twitter
+      href: https://twitter.com/nrennie35
+    - icon: fa fa-github
+      href: https://github.com/nrennie
+    - icon: fa fa-envelope
+      href: mailto:nrennie35@gmail.com
+
   search: false
 output: distill::distill_article
 
