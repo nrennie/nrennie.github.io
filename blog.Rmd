@@ -1,5 +1,0 @@
----
-title: "Blog"
-listing: posts
-output: distill::distill_article
----
