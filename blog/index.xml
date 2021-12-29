@@ -6,6 +6,7 @@
     <description>Recent content in Blog on Nicola Rennie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< HEAD
     <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Year of #TidyTuesday</title>
@@ -17,6 +18,9 @@
 For those of you who don&amp;rsquo;t know, #TidyTuesday is a weekly data challenge aimed at the R community. Every week a new dataset is posted alongside a chart or article related to that dataset, and ask participants explore the data. You can access the data and find out more here.</description>
     </item>
     
+=======
+    <lastBuildDate>Sat, 18 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> eee488e068b93d9639519592f65f1f617a5810ec
     <item>
       <title>Thinking about #TidyTuesday (and the Spice Girls)</title>
       <link>https://nrennie.github.io/blog/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/</link>
