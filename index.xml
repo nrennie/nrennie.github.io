@@ -6,7 +6,7 @@
     <description>Recent content on Nicola Rennie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tiles</title>
       <link>https://nrennie.github.io/rtistry/tiles/</link>
@@ -37,6 +37,17 @@ remotes::install_github(&amp;#34;nrennie/aRt&amp;#34;) library(aRt) vortex()  Pa
       <description>Overview   The waves() series, inspired by repeating patterns, is constructed from sine and cosine waves.
 Installation   This generative artwork can be reproduced using my {aRt} package on GitHub, which you can install in R using:
 remotes::install_github(&amp;#34;nrennie/aRt&amp;#34;) library(aRt) waves()  Packages required    {ggplot2} {rcartocolor}  Parameters    a is a sine wave parameter. b is a cosine wave parameter. main_col sets the main colour of the artwork.</description>
+    </item>
+    
+    <item>
+      <title>Curating for @WeAreRLadies</title>
+      <link>https://nrennie.github.io/blog/2022-01-18-curating-for-wearerladies/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nrennie.github.io/blog/2022-01-18-curating-for-wearerladies/</guid>
+      <description>In December 2020, I curated the twitter feed for @WeAreRLadies and shared my 280 character thoughts to over 25,000 followers. This blog post will share my thoughts on the experience, and hopefully encourage (and prepare) you to sign up as a curator yourself.
+This week&amp;#39;s #RLadies curator is @nrennie35!! pic.twitter.com/Xq2gVYduoJ
+&amp;mdash; We are R-Ladies (@WeAreRLadies) December 12, 2021 What is @WeAreRLadies?      R-Ladies is a worldwide organization whose mission is to promote gender diversity in the R community.</description>
     </item>
     
     <item>
