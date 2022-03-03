@@ -6,7 +6,7 @@
     <description>Recent content on Nicola Rennie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nrennie.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rtistry</title>
       <link>https://nrennie.github.io/portfolio/rtistry/</link>
@@ -36,6 +36,16 @@ Portfolio     Below is a selection of my contributions to the #TidyTuesday chall
       <guid>https://nrennie.github.io/portfolio/dubois_challenge/</guid>
       <description>What is the Du Bois Challenge?     The Du Bois Challenge is part of a celebration of the data visualization legacy of W.E.B Du Bois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools. Check out the challenge here.
 Who was W.E.B. DuBois?     Born in 1868, William Edward Burghardt Du Bois was an activist, author, and scholar, being the first African-American to receive a doctorate from Harvard University.</description>
+    </item>
+    
+    <item>
+      <title>Best (artistic) practices in R</title>
+      <link>https://nrennie.github.io/blog/2022-03-03-best-artistic-practices-in-r/</link>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nrennie.github.io/blog/2022-03-03-best-artistic-practices-in-r/</guid>
+      <description>What is generative art?     Generative art is the process of creating artwork through a set of pre-determined rules often with an element of randomness. It is often termed rtistry or aRt when the art is created using the programming language R.
+In October 2021, I started experimenting with generative art, and developed a R package. I also took part in #genuary2022, the challenge running in the month of January where generative artists create art based on a different prompt each day.</description>
     </item>
     
     <item>
