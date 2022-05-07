@@ -1,6 +1,6 @@
 Package: nrennie.github.io
 Title: Nicola Rennie
-Version: 
+Version: 1.0.0
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
