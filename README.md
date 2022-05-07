@@ -28,6 +28,17 @@ I'm Nicola Rennie, a data scientist at [Jumping Rivers](https://www.jumpingriver
 
 <div style="display: table; width: 100%; padding-bottom:20px;">
   <div style="float: left; width: 25%;">
+  <img src="https://github.com/nrennie/funcnetout/blob/main/man/figures/logo.png?raw=true" width="70%">
+  </div>
+  <div style="float: left; width: 75%;">
+  <a href="https://nrennie.github.io/funcnetout/"><h2>funcnetout</h2></a>
+  <p>{funcnetout} is an R packagefor detecting functional outliers in a network setting, with options for online or offline detection.
+  </p>
+  </div>
+</div>
+
+<div style="display: table; width: 100%; padding-bottom:20px;">
+  <div style="float: left; width: 25%;">
   <img src="https://github.com/nrennie/PrettyCols/blob/main/man/figures/logo.png?raw=true" width="70%">
   </div>
   <div style="float: left; width: 75%;">
@@ -39,11 +50,33 @@ I'm Nicola Rennie, a data scientist at [Jumping Rivers](https://www.jumpingriver
 
 <div style="display: table; width: 100%; padding-bottom:20px;">
   <div style="float: left; width: 25%;">
+  <img src="https://github.com/nrennie/simnetdemand/blob/main/man/figures/logo.png?raw=true" width="70%">
+  </div>
+  <div style="float: left; width: 75%;">
+  <a href="https://nrennie.github.io/simnetdemand/"><h2>simnetdemand</h2></a>
+  <p>{simnetdemand} is an R package used to simulate demand patterns for different types of transport network.
+  </p>
+  </div>
+</div>
+
+<div style="display: table; width: 100%; padding-bottom:20px;">
+  <div style="float: left; width: 25%;">
   <img src="https://github.com/nrennie/usefunc/blob/main/man/figures/logo.png?raw=true" width="70%">
   </div>
   <div style="float: left; width: 75%;">
   <a href="https://nrennie.github.io/usefunc/"><h2>usefunc</h2></a>
   <p>{usefunc} is an R package containing some additional useful functions.
+  </p>
+  </div>
+</div>
+
+<div style="display: table; width: 100%; padding-bottom:20px;">
+  <div style="float: left; width: 25%;">
+  <img src="https://github.com/nrennie/WBLifeExpectancy/blob/main/man/figures/logo.png?raw=true" width="70%">
+  </div>
+  <div style="float: left; width: 75%;">
+  <a href="https://nrennie.github.io/WBLifeExpectancy/"><h2>WBLifeExpectancy</h2></a>
+  <p>{WBLifeExpectancy} is an R package for analysing and visualising World Bank life expectancy data. It was created and used for the analysis in the Significane article [We’re not getting any younger! Or should that be “older”?](https://www.significancemagazine.com/science/723-we-re-not-getting-any-younger-or-should-that-be-older).
   </p>
   </div>
 </div>

@@ -5,4 +5,22 @@ home:
   sidebar: FALSE
 navbar:
   structure:
-    right:  [search]
+    left: [search]
+    right: [github, linkedin, twitter, instagram]
+  components:
+    twitter:
+      icon: fa-twitter
+      href: https://twitter.com/nrennie35
+      aria-label: Twitter
+    github:
+      icon: fa-github
+      href: https://github.com/nrennie
+      aria-label: GitHub
+    linkedin:
+      icon: fa-linkedin
+      href: https://uk.linkedin.com/in/nicola-rennie-076511b3
+      aria-label: LinkedIn
+    instagram:
+      icon: fa-instagram
+      href: https://www.instagram.com/nrennie_art/
+      aria-label: Instagram
