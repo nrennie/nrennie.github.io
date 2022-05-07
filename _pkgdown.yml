@@ -1,4 +1,8 @@
 url: https://nrennie.github.io/
 template:
   bootstrap: 5
-
+home:
+  sidebar: FALSE
+navbar:
+  structure:
+    right:  [search]
