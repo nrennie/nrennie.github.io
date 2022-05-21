@@ -1,4 +1,4 @@
-# Nicola Rennie <img src="man/figures/logo.jpg" align="right" width="120" />
+# Nicola Rennie 
 
 ### Hello 👋
 
