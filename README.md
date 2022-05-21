@@ -43,7 +43,7 @@ I'm Nicola Rennie, a data scientist at [Jumping Rivers](https://www.jumpingriver
   </div>
   <div style="float: left; width: 75%;">
   <a href="https://nrennie.github.io/PrettyCols/"><h2>PrettyCols</h2></a>
-  <p>{PrettyCols} is an R package containing aesthetically pleasing colour palettes. The structure of the package is  based on code from the <a> {PNWColors}](https://github.com/jakelawlor/PNWColors),  [{wesanderson}](https://github.com/karthik/wesanderson), and [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer) packages. 
+  <p>{PrettyCols} is an R package containing aesthetically pleasing colour palettes. The structure of the package is  based on code from the [{PNWColors}](https://github.com/jakelawlor/PNWColors),  [{wesanderson}](https://github.com/karthik/wesanderson), and [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer) packages. 
 </p>
   </div>
 </div>

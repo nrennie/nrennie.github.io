@@ -1,12 +1,17 @@
 url: https://nrennie.github.io/
 template:
   bootstrap: 5
+  bslib:
+    bg: "#eaf2f2"
+    fg: "#546666"
+    primary: "#546666"
+    heading_font: {google: "Fraunces"}
 home:
   sidebar: FALSE
 navbar:
   structure:
     left: [search]
-    right: [github, linkedin, twitter, instagram]
+    right: [github, linkedin, twitter, instagram, home]
   components:
     twitter:
       icon: fa-twitter
@@ -24,3 +29,8 @@ navbar:
       icon: fa-instagram
       href: https://www.instagram.com/nrennie_art/
       aria-label: Instagram
+    home:
+      icon: fa-globe
+      href: https://nrennie.rbind.io/
+      aria-label: Website
+
