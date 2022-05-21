@@ -6,6 +6,8 @@ template:
     fg: "#546666"
     primary: "#546666"
     heading_font: {google: "Fraunces"}
+  includes:
+    in_header: pkgdown/icon.html
 home:
   sidebar: FALSE
 navbar:
