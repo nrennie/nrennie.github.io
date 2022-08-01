@@ -32,7 +32,18 @@ I'm Nicola Rennie, a data scientist at [Jumping Rivers](https://www.jumpingriver
   </div>
   <div style="float: left; width: 75%;">
   <a href="https://nrennie.github.io/funcnetout/"><h2>funcnetout</h2></a>
-  <p>{funcnetout} is an R packagefor detecting functional outliers in a network setting, with options for online or offline detection.
+  <p>{funcnetout} is an R package for detecting functional outliers in a network setting, with options for online or offline detection.
+  </p>
+  </div>
+</div>
+
+<div style="display: table; width: 100%; padding-bottom:20px;">
+  <div style="float: left; width: 25%;">
+  <img src="https://github.com/nrennie/ggflowchart/blob/main/man/figures/logo.png?raw=true" width="70%">
+  </div>
+  <div style="float: left; width: 75%;">
+  <a href="https://nrennie.github.io/ggflowchart/"><h2>ggflowchart</h2></a>
+  <p>{ggflowchart} is an R package for creating flowchart diagrams using {ggplot2}.
   </p>
   </div>
 </div>
