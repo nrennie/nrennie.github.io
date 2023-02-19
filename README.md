@@ -79,6 +79,17 @@ This website contains for documentation for the R packages I've created. I have 
 
 <div style="display: table; width: 100%; padding-bottom:20px;">
   <div style="float: left; width: 25%;">
+  <img src="https://github.com/nrennie/LondonMarathon/blob/main/man/figures/logo.png?raw=true" width="70%">
+  </div>
+  <div style="float: left; width: 75%;">
+  <h2>LondonMarathon</h2>
+  <p>{LondonMarathon} is an R package containing two data sets about London Marathon scraped from Wikipedia.
+  </p>
+  </div>
+</div>
+
+<div style="display: table; width: 100%; padding-bottom:20px;">
+  <div style="float: left; width: 25%;">
   <img src="https://github.com/nrennie/simnetdemand/blob/main/man/figures/logo.png?raw=true" width="70%">
   </div>
   <div style="float: left; width: 75%;">
