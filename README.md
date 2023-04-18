@@ -2,7 +2,7 @@
 
 ### Hello 👋
 
-I'm Nicola Rennie, a data scientist at [Jumping Rivers](https://www.jumpingrivers.com/), R enthusiast, data visualisation lover, among other things. My personal website is hosted at [nrennie.rbind.io](https://nrennie.rbind.io/).
+I'm Nicola Rennie, a Lecturer in Health Data Science in the [Centre for Health Informatics, Computing, and Statistics (CHICAS)]() within Lancaster Medical School at Lancaster University. I'm an R enthusiast, data visualisation aficionado, and generative artist, among other things. My personal website is hosted at [nrennie.rbind.io](https://nrennie.rbind.io/).
 
 This website contains for documentation for the R packages I've created. I have developed R packages for generative art, data analysis, data visualisation; and outlier detection. The documentation for all of my publicly available R packages can be found on [nrennie.github.io](https://nrennie.github.io/).
 
