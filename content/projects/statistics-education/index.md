@@ -3,19 +3,19 @@ title: "Statistics Education"
 subtitle: ""
 excerpt: ""
 date: 2024-02-01
-weight: 8
+weight: 6
 author: "Nicola Rennie"
 draft: false
 categories:
   - Research
   - StatsEd
 layout: single
-image: featured.png
+image: featured.jpg
 ---
 
-* webR
-* RoSE Network
-* RSS Teaching Statistics Network
+### RoSE Network
 
+### RSS Teaching Statistics Network
 
+### webR
 
