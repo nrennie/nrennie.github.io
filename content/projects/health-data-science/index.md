@@ -9,8 +9,9 @@ draft: false
 categories:
   - Research
   - Data Science
+  - CHICAS
 layout: single
-image: featured.png
+image: featured.jpg
 ---
 
 
