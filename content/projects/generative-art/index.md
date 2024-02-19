@@ -1,5 +1,5 @@
 ---
-title: "Rtistry"
+title: "Generative Art"
 subtitle: ""
 excerpt: "Generative art is the practice of creating artwork using code. When the programming language of choice is R, it's often termed *Rtistry* or *aRt*."
 date: 2023-07-29
@@ -10,6 +10,9 @@ categories:
   - Rtistry
 layout: single
 image: featured.jpeg
+aliases:
+- /portfolio/rtistry
+- /projects/rtistry
 links:
 - icon: github
   icon_pack: fab
