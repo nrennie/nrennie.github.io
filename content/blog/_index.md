@@ -1,6 +1,6 @@
 ---
 author: Nicola Rennie
-description: "Blog about all things R, data science, and visualisation"
+description: "Blog about all things R, data science, and visualisation."
 cascade:
   author: Nicola Rennie
   show_author_byline: false
