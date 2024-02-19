@@ -2,8 +2,8 @@
 title: "R Packages"
 subtitle: ""
 excerpt: "R packages for generative art, data analysis and visualisation; data simulation, and outlier detection."
-date: 2023-05-11
-weight: 4
+date: 2024-02-19
+weight: 3
 author: "Nicola Rennie"
 draft: false
 categories:
@@ -34,6 +34,14 @@ CRAN: [cran.r-project.org/web/packages/ggflowchart](https://cran.r-project.org/w
 {PrettyCols} is an R package containing aesthetically pleasing colour palettes. The structure of the package is based on code from the [{PNWColors}](https://github.com/jakelawlor/PNWColors), [{wesanderson}](https://github.com/karthik/wesanderson), and [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer) packages.
 
 CRAN: [cran.r-project.org/web/packages/PrettyCols](https://cran.r-project.org/web/packages/PrettyCols/index.html)
+{{< /links-section >}}
+
+
+{{< links-section "https://raw.githubusercontent.com/nrennie/RSSthemes/main/man/figures/logo.png" >}}
+### [RSSthemes](https://github.com/nrennie/RSSthemes)
+{RSSthemes} is an R package for styling graphics for RSS publications. This package accompanies the Best Practices for Data Visualisation guidance, published by the Royal Statistical Society, which can be found at [rss.org.uk/datavisguide](https://royal-statistical-society.github.io/datavisguide/).
+
+CRAN: [cran.r-project.org/web/packages/RSSthemes](https://cran.r-project.org/web/packages/RSSthemes/index.html)
 {{< /links-section >}}
 
 ## GitHub Packages
