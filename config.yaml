@@ -100,13 +100,13 @@ menu:
       title: About
       url: /
       weight: 1
+    - name: Projects
+      title: Projects
+      url: /projects/
+      weight: 2
     - name: Talks
       title: Talks
       url: /talks/
-      weight: 2
-    - name: Portfolio
-      title: Portfolio
-      url: /portfolio/
       weight: 3
     - name: Blog
       title: Blog
