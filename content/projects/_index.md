@@ -8,7 +8,9 @@ images:
 show_author_byline: false
 show_post_date: false
 type: projects
-layout: list-grid 
+layout: list-grid
+aliases:
+- /portfolio
 cascade:    
   show_author_byline: true
   show_post_date: false
