@@ -3,7 +3,9 @@ author: Nicola Rennie
 categories:
   - Research
 date: "2021-10-06"
-slug: "2021-10-06-detecting-demand-outliers-in-transport-systems"
+slug: "detecting-demand-outliers-in-transport-systems"
+aliases:
+- /blog/2021-10-06-detecting-demand-outliers-in-transport-systems
 draft: false
 excerpt: An overview of my PhD thesis entitled "Detecting demand outliers in transport systems".
 layout: blog-single
