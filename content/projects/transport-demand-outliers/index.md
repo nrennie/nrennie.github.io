@@ -1,9 +1,9 @@
 ---
 title: "Transport demand outliers"
 subtitle: ""
-excerpt: ""
+excerpt: "Development of functional analysis methods for detecting outliers in time series data, with case studies on railway bookings and bike-sharing usage data."
 date: 2024-02-01
-weight: 8
+weight: 4
 author: "Nicola Rennie"
 draft: false
 categories:

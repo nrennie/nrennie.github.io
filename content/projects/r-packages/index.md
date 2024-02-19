@@ -7,7 +7,7 @@ weight: 3
 author: "Nicola Rennie"
 draft: false
 categories:
-  - Packages
+  - R Packages
 layout: single
 image: featured.png
 links:

@@ -3,7 +3,7 @@ title: "Consultancy"
 subtitle: ""
 excerpt: "My data science consultancy experience includes designing data visualisations, developing dashboards, and personalised training courses."
 date: 2023-02-07
-weight: 3
+weight: 10
 author: "Nicola Rennie"
 draft: false
 categories:
