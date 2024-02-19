@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Publications"
 subtitle: ""
 excerpt: "My research interests lie in statistics and data science, with a focus on applications to health data."
 date: 2022-10-01
@@ -8,16 +8,10 @@ author: "Nicola Rennie"
 draft: false
 categories:
   - Research
+  - Publications
 layout: single
 image: featured.png
 ---
-
-My research interests lie in statistics, data science, and operational research - with a focus on applications to health data. I'm also interested in research into the way we teach statistics and data science, particularly on aspects related to accessibility and reproducibility of teaching materials.
-
-My previous research focused on the development and use of functional analysis for detecting outliers in time series data. We have performed case studies on multiple empirical data sets including railway booking data and bike-sharing usage data. 
-
-A blog post giving an overview of my PhD thesis is available on [my website](https://nrennie.rbind.io/blog/2021-10-06-detecting-demand-outliers-in-transport-systems/).
-
 
 ## Publications
 
