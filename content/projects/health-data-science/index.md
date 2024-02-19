@@ -3,19 +3,16 @@ title: "Health Data Science"
 subtitle: ""
 excerpt: ""
 date: 2024-02-01
-weight: 8
+weight: 9
 author: "Nicola Rennie"
 draft: false
 categories:
   - Research
-  - StatsEd
+  - Data Science
 layout: single
 image: featured.png
 ---
 
-* webR
-* RoSE Network
-* RSS Teaching Statistics Network
 
 
 
