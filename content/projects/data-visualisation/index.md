@@ -3,7 +3,7 @@ title: "Data Visualisation"
 subtitle: ""
 excerpt: "A selection of my data visualisation work created in R, Python, Tableau, rawgraphs, Inkscape, and Figma."
 date: 2023-01-25
-weight: 5
+weight: 2
 author: "Nicola Rennie"
 draft: false
 categories:
