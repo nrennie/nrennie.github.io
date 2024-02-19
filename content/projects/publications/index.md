@@ -10,7 +10,7 @@ categories:
   - Research
   - Publications
 layout: single
-image: featured.png
+image: featured.jpg
 ---
 
 ## Journal publications
