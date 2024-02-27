@@ -2,4 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-docs
+public/
+.httr-oauth
+content/blog/2022-11-16-using-functional-analysis-to-model-air-pollution-data-in-r/air_pollution.csv
+content/blog/2023-04-14-detecting-heart-murmur-time-series-r-tidymodels/Data/
+content/blog/2023-04-14-detecting-heart-murmur-time-series-r-tidymodels/analysis.R
+*.rds
+*.svg
