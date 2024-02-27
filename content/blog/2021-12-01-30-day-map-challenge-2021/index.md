@@ -7,7 +7,9 @@ date: "2021-12-01"
 draft: false
 excerpt: "The #30DayMapChallenge is a daily mapping, cartography, and data visualization challenge aimed at the spatial community."
 layout: blog-single
-slug: "2021-12-01-30-day-map-challenge-2021"
+slug: "30-day-map-challenge-2021"
+aliases:
+- /blog/2021-12-01-30-day-map-challenge-2021
 subtitle: "The #30DayMapChallenge is a daily mapping, cartography, and data visualization challenge aimed at the spatial community."
 title: 30 Day Map Challenge 2021
 image: featured.png

@@ -7,7 +7,9 @@ date: "2022-11-14"
 draft: false
 excerpt: "Let's say you need to understand how your data changes within a day, and between different days. Functional analysis is one approach of doing just that so here's how I applied functional analysis to some air pollution data using R!"
 layout: blog-single
-slug: 2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r
+slug: using-functional-analysis-to-model-air-pollution-data-in-r
+aliases:
+- /blog/2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r
 subtitle: "Let's say you need to understand how your data changes within a day, and between different days. Functional analysis is one approach of doing just that so here's how I applied functional analysis to some air pollution data using R!"
 title: "Using functional analysis to model air pollution data in R"
 image: featured.png

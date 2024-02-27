@@ -8,7 +8,9 @@ date: "2022-12-27"
 draft: false
 excerpt: "After another 52 data visualisations created for #TidyTuesday, it's time for the annual round-up! Read this blog post for some interesting R packages discovered, a few new I've tricks learnt, and the data visualisations I'd like to do again."
 layout: blog-single
-slug: "2022-12-27-another-year-of-tidytuesday"
+slug: "another-year-of-tidytuesday"
+aliases:
+- /blog/2022-12-27-another-year-of-tidytuesday
 subtitle: "After another 52 data visualisations created for #TidyTuesday, it's time for the annual round-up! Read this blog post for some interesting R packages discovered, a few new I've tricks learnt, and the data visualisations I'd like to do again."
 title: "Another Year of #TidyTuesday"
 image: featured.png

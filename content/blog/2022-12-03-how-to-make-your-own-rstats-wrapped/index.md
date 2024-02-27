@@ -7,7 +7,9 @@ date: "2022-12-03"
 draft: false
 excerpt: "Forget about Spotify Wrapped and make your own #RStats Wrapped instead! This blog post will show you how to find your most used functions and make a graphic with {ggplot2}!"
 layout: blog-single
-slug: 2022-12-03-how-to-make-your-own-rstats-wrapped
+slug: how-to-make-your-own-rstats-wrapped
+aliases:
+- /blog/2022-12-03-how-to-make-your-own-rstats-wrapped
 subtitle: "Forget about Spotify Wrapped and make your own #RStats Wrapped instead! This blog post will show you how to find your most used functions and make a graphic with {ggplot2}!"
 title: "How to make your own #RStats Wrapped!"
 image: featured.png

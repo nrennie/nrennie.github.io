@@ -6,7 +6,9 @@ date: "2022-02-04"
 draft: false
 excerpt: "Last year I was a finalist in the 2021 Statistical Excellence Award for Early-Career Writing. This blog post introduces my article published in Significance and gives some tips for statistical writing."
 layout: blog-single
-slug: "2022-02-04-a-story-of-statistical-writing-and-life-expectancy"
+slug: "a-story-of-statistical-writing-and-life-expectancy"
+aliases:
+- /blog/2022-02-04-a-story-of-statistical-writing-and-life-expectancy
 subtitle: "Last year I was a finalist in the 2021 Statistical Excellence Award for Early-Career Writing. This blog post introduces my article published in Significance and gives some tips for statistical writing."
 title: "A Story of Statistical Writing and Life Expectancy"
 image: featured.jpg

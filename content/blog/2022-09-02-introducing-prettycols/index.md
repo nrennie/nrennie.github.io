@@ -8,7 +8,9 @@ date: "2022-09-02"
 draft: false
 excerpt: "An introduction to {PrettyCols} - a new R package containing aesthetically pleasing colour palettes that are compatible with {ggplot2}."
 layout: blog-single
-slug: "2022-09-02-introducing-prettycols"
+slug: "introducing-prettycols"
+aliases:
+- /blog/2022-09-02-introducing-prettycols
 subtitle: "An introduction to {PrettyCols} - a new R package containing aesthetically pleasing colour palettes that are compatible with {ggplot2}."
 title: "Introducing {PrettyCols}"
 image: featured.png

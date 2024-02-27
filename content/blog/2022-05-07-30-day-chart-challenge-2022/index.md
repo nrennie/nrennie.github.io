@@ -7,7 +7,9 @@ draft: false
 excerpt: "The #30DayChartChallenge is a data visualisation challenge where participants create a chart for each daily prompt."
 layout: blog-single
 subtitle: "The #30DayChartChallenge is a data visualisation challenge where participants create a chart for each daily prompt."
-slug: "2022-05-07-30-day-chart-challenge-2022"
+slug: "30-day-chart-challenge-2022"
+aliases:
+- /blog/2022-05-07-30-day-chart-challenge-2022
 title: 30 Day Chart Challenge 2022
 image: featured.png
 ---

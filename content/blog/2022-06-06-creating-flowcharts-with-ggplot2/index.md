@@ -7,7 +7,9 @@ date: "2022-06-06"
 draft: false
 excerpt: "Flowcharts can be a useful way to visualise complex processes. This tutorial blog will explain how to create one using {igraph} and {ggplot2}."
 layout: blog-single
-slug: "2022-06-06-creating-flowcharts-with-ggplot2"
+slug: "creating-flowcharts-with-ggplot2"
+aliases:
+- /blog/2022-06-06-creating-flowcharts-with-ggplot2
 subtitle: "Flowcharts can be a useful way to visualise complex processes. This tutorial blog will explain how to create one using {igraph} and {ggplot2}."
 title: "Creating flowcharts with {ggplot2}"
 image: featured.png

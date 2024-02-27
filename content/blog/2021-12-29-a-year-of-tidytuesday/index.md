@@ -8,7 +8,9 @@ date: "2021-12-29"
 draft: false
 excerpt: "One of my goals for 2021 was to participate in the #TidyTuesday challenge on a regular basis. This blog post reflects on the past year of data visualisations."
 layout: blog-single
-slug: "2021-12-29-a-year-of-tidytuesday"
+slug: "a-year-of-tidytuesday"
+aliases:
+- /blog/2021-12-29-a-year-of-tidytuesday
 subtitle: "One of my goals for 2021 was to participate in the #TidyTuesday challenge on a regular basis. This blog post reflects on the past year of data visualisations."
 title: "A Year of #TidyTuesday"
 image: featured.jpg

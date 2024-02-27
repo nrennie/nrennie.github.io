@@ -7,7 +7,9 @@ date: "2022-01-18"
 draft: false
 excerpt: "An overview of my experience of curating the @WeAreRLadies twitter feed."
 layout: blog-single
-slug: "2022-01-18-curating-for-wearerladies"
+slug: "curating-for-wearerladies"
+aliases:
+- /blog/2022-01-18-curating-for-wearerladies
 subtitle: "An overview of my experience of curating the @WeAreRLadies twitter feed."
 title: "Curating for @WeAreRLadies"
 image: featured.jpg
