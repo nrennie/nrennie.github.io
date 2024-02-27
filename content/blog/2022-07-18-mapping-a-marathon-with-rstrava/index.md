@@ -23,6 +23,7 @@ After a long run in the Forest of Bowland when visiting Lancaster for a few days
 
 Since {rStrava} is available on CRAN, you can install it in the usual way using:
 
+
 ```r
 install.packages("rStrava")
 library(rStrava)
@@ -181,6 +182,7 @@ g <- ggmap(bg_map) +
              size = 1) 
 g
 ```
+
 The maps returned using `geom_point()` and `geom_sf()` are essentially the same in this case.
 
 <p align="center">
@@ -246,6 +248,7 @@ g = g +
   transition_time(time = time) +
   shadow_mark()
 ```
+
 The `animate()` function then actually builds the animation. Usually `renderer = gifski_renderer()` should be the default, but I kept getting individual images instead of a gif unless I specified it manually - to investigate later. Here, I also specified the width and height (using a little bit of trial and error to avoid white space caused by the fixed ratio from `ggmap()`). `anim_save()` then saves the gif to a file (analogously to `ggsave()` from {ggplot2}).
 
 ```r
