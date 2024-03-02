@@ -21,7 +21,7 @@ links:
 - icon: download
   icon_pack: fas
   name: Slides
-  url: ../../talks/euro-or-practice-data-viz/slides.html
+  url: /talks/euro-or-practice-data-viz/slides.html
 ---
 
 As part of the parallel sessions section, I will deliver a short presentation on the use of data visualisation in OR before we open the floor to the round table discussion.
