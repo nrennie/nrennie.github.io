@@ -56,8 +56,8 @@ Yes! The `gen_additive_model()` function in the {parsnip} package allows you to 
 
 Yes, there are two ways to include interaction terms in GAMs in {mgcv}, depending on whether you want one or both of the terms are smoothed variables:
 
-* For an interaction between two smoothed variables, `x` and `y`, add `s(x, y)` to the right hand side of the formula in `gam()`.
-* For an interaction between a smoothed variable `x`, and a linear variable `y`, add `s(x, by = y)` to the right hand side of the formula in `gam()`. Here, `y` can be either continuous (then the linear effect of `y` varies smoothly with `x`) or a factor (where it should also be a main effect and you'll have a smooth term that varies between different levels of `y`).
+* For an interaction between two smoothed variables `x` and `y`, add `s(x, y)` (for e.g. spatial coordinates) or `te(x, y)` or `ti(x, y)` to the right hand side of the formula in `gam()`.
+* For an interaction between a smoothed variable `x`, and a linear variable `y`, add `s(x, by = y)` (or `te()` or `ti()`) to the right hand side of the formula in `gam()`. Here, `y` can be either continuous (then the linear effect of `y` varies smoothly with `x`) or a factor (where it should also be a main effect and you'll have a smooth term that varies between different levels of `y`).
 
 #### Can we use AIC to select models?
 
