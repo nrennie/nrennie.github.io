@@ -25,6 +25,17 @@ image: featured.png
 ## Automatically updating the data
 
 see prev blog on gh actions
+No need to re-deploy the app, only the data
+
+
+## Links
+
+https://github.com/nrennie/tidytuesday
+
+https://github.com/nrennie/tidytuesday-shiny-app
+
+https://nrennie.rbind.io/tidytuesday-shiny-app/
+
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2024-02-26-forecasting-gams-questions/dog.gif" width = "60%" alt="Gif of confused dogs with questions marks above their heads"><br>
