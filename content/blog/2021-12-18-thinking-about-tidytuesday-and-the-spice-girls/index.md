@@ -18,14 +18,16 @@ image: featured.jpeg
 
 Earlier this week, whilst curating for @[WeAreRLadies](https://twitter.com/WeAreRLadies), I tweeted a thread on my thought process for [this week's #TidyTuesday challenge](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-14/readme.md). This blog post expands on the thoughts in this aforementioned thread:
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">It can be a little bit scary to make your first (or any) contribution to <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> on twitter so I thought I’d outline my thought process for this week’s Spice Girls data. <a href="https://t.co/zsyV3mfRkG">pic.twitter.com/zsyV3mfRkG</a></p>&mdash; We are R-Ladies (@WeAreRLadies) <a href="https://twitter.com/WeAreRLadies/status/1470792871242522631?ref_src=twsrc%5Etfw">December 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 For those of you who don't know, #TidyTuesday is a weekly data challenge aimed at the R community. Every week a new dataset is posted alongside a chart or article related to that dataset, and ask participants explore the data. You can access the data and find out more [here](https://github.com/rfordatascience/tidytuesday/blob/master/README.md).
 
 It can be a little bit scary to make your first (or any) contribution to #TidyTuesday on twitter especially when the quality of the submissions you see is so high. So I thought I’d outline my thought process for this week’s Spice Girls data. 
 
 <p align="center">
-<img src="/blog/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/spice.gif?raw=true">
+<img src="spice.gif" alt="spice girls gif">
 </p>
 
 <p align = "center" style="font-style: italic;">
@@ -50,7 +52,9 @@ To start off plotting, I usually pull out the variables that I'm going to use by
 
 Now for the fun part – plotting! There isn't a built in geom within {ggplot2} to create spider plots, so it's off to Google I go. The {ggradar} package on GitHub by @[ricardobion](https://twitter.com/ricardobion) is compatible with {ggplot2} so it seems like a viable option. 
 
-![](/blog/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/basic_plot.jpeg) 
+<p align="center">
+<img src="basic_plot.jpeg" alt="simple plot" width="80%">
+</p>
 
 I now have a basic spider plot, and I can get started think a bit about design.
 
@@ -64,10 +68,12 @@ I add some captions, including some a subtitle (or tag) to explain what the plot
 
 Now the only thing left to do is post the final version to twitter with the #TidyTuesday hashtag. 
 
-![](/blog/2021-12-18-thinking-about-tidytuesday-and-the-spice-girls/featured.jpeg)
+<p align="center">
+<img src="featured.jpeg" alt="final radar plot" width="80%">
+</p>
 
 The code for this plot is on [GitHub](https://github.com/nrennie/tidytuesday/tree/main/2021/14-12-2021) if you want to play around with it and create your own version. 
 
 ### Final Thoughts
 
-I'll blog about my experience of curating in a later post, but for now I hope that sharing my process for creating a data visualisation has been helpful. Why don't you participate in your first TidyTuesday if you haven't already?
+I'll blog about my experience of curating in a later post, but for now I hope that sharing my process for creating a data visualisation has been helpful. Why don't you participate in your first #TidyTuesday if you haven't already?
