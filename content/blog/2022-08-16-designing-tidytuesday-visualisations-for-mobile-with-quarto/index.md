@@ -70,7 +70,7 @@ P.S. If you're looking for a longer explanation of how dpi, pixels, and absolute
 
 **Solution**: Quarto (or RMarkdown).
 
-I'll preface this section with the fact the I already like [Quarto](https://quarto.org/) a lot. If you've never heard of Quarto - think of it as the next-generation of RMarkdown with support for multiple programming languages and multiple output formats. And yes, everything in this solution also works with RMarkdown if you're not ready to make the change to Quarto.
+I'll preface this section with the fact that I already like [Quarto](https://quarto.org/) a lot. If you've never heard of Quarto - think of it as the next-generation of RMarkdown with support for multiple programming languages and multiple output formats. And yes, everything in this solution also works with RMarkdown if you're not ready to make the change to Quarto.
 
 Quarto (or RMarkdown) probably wasn't designed to help you make png or jpg files of static visualisations in a specific size, but it's a really nice feature that comes out naturally. Instead of running the code to generate your plot in an R script, run it in a code block in a Quarto (.qmd) or RMarkdown (.Rmd) file instead. The code block options for your code might look something like this:
 
@@ -91,6 +91,20 @@ For each code block, you can specify the dpi, the height and width of the plot, 
 When you render your Quarto or RMarkdown document, it should appear in the **Viewer** tab in the bottom right corner of RStudio. The image that is rendered here will have the dpi you specified rather than 96 dpi as in the **Plot** tab. The plot will stretch to fit the pane width, but it will look *correct* in terms of the way the e.g. fonts appear. If you haven't set your Quarto document to be `self-contained`, then the images have also already been saved for you - probably in a folder called  `documentname_files/figure-html/`. Otherwise, either right click on the image and save, or use `ggsave()` with the same dpi setting.
 
 Another bonus: if you *run current chunk* in Quarto a preview of the plot will appear at 96 dpi. However, the plot is resized so that the preview of the current chunk looks the same as the high resolution version.
+
+> Note: an alternative solution to both Problem 1 and 2 is to use {camcorder}, an R package to track and automatically save graphics generated with {ggplot2}. You can set the dpi, height, and width of your plot and it will appear in the Viewer pane of RStudio.
+
+```r
+library(camcorder)
+gg_record(
+  dir = "recording",
+  device = "png",
+  width = 2,
+  height = 4,
+  units = "in",
+  dpi = 300
+)
+```
 
 ### Problem 3: You have a lot less space to work with!
 
