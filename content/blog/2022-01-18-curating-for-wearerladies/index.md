@@ -17,7 +17,9 @@ image: featured.jpg
 
 In December 2020, I curated the twitter feed for [@WeAreRLadies](https://twitter.com/WeAreRLadies) and shared my 280 character thoughts to over 25,000 followers. This blog post will share my thoughts on the experience, and hopefully encourage (and prepare) you to sign up as a curator yourself.
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">This week&#39;s <a href="https://twitter.com/hashtag/RLadies?src=hash&amp;ref_src=twsrc%5Etfw">#RLadies</a> curator is <a href="https://twitter.com/nrennie35?ref_src=twsrc%5Etfw">@nrennie35</a>!! <a href="https://t.co/Xq2gVYduoJ">pic.twitter.com/Xq2gVYduoJ</a></p>&mdash; We are R-Ladies (@WeAreRLadies) <a href="https://twitter.com/WeAreRLadies/status/1470070867782770693?ref_src=twsrc%5Etfw">December 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 ### What is @WeAreRLadies?
 
@@ -42,9 +44,10 @@ Originally, I had a bit of a rough schedule planned out with things I thought mi
 * I had a few ideas for things I wanted to tweet about. However people often left comments on posts, or responded to polls, with things they'd like to know more about. Be prepared to let your plans change!
 * I also switched up some of the spatial-themed tweets since the previous week focused mostly on spatial stuff.
 * There also might be days when you have no idea what to tweet about. If you're stuck for ideas, ask! Create a post early in the week, asking people in the community if there's anything they would like to learn hwo to do in R. If you don't know anything about the suggested topics yourself, use it as an opportunity to crowd-source knowledge and help others make new connections. 
-* Polls also work very well because they naturally create multiple posts. As well as the initial poll, you can also make a post showing the results (and show off some pretty {ggplot2} plots), and then make a further post discussing the results. The results of the polls and the code I used to create the plots in {ggplot2} are on [GitHub](https://github.com/nrennie/R-Ladies) if you're thinking of creating a polls and want to reuse the same plots. 
+* Polls also work very well because they naturally create multiple posts. As well as the initial poll, you can also make a post showing the results (and show off some pretty {ggplot2} plots), and then make a further post discussing the results. The results of the polls and the code I used to create the plots in {ggplot2} are on [GitHub](https://github.com/nrennie/R-Ladies) if you're thinking of creating a polls and want to reuse the same plots.
+
 <p align="center">
-<img src="/blog/2022-01-18-curating-for-wearerladies/poll.jpg?raw=true" width="80%">
+<img src="poll.jpg" width="80%" alt="bar chart">
 </p>
 
 * Talk about what you like, even if it's not the thing you know the most about. I really enjoy data visualisation, and I ended up live-tweeting my participation in [#TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/README.md) that week (thanks [@StatsRhian](https://twitter.com/StatsRhian) for the suggestion!)
