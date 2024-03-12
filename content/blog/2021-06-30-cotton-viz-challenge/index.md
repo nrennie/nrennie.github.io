@@ -17,7 +17,7 @@ image: featured.jpg
 In June, the #CottonViz data visualisation challenge was run by the History of Statistics & Young Statisticians sections of the Royal Statistical Society (RSS). The challenge aimed to celebrate the work of Mary Eleanor Spear (1897 –1986), credited with popularising the *range-bar* charts.
 
 <p align="center">
-<img src="twitter.png" alt="Twitter screenshot" width="49%">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
 </p>
 
 The challenge invited particpants to either recreate Spears' original visualisation of US cotton supply (shown below), or design a new visualisation of the same data. 
