@@ -12,6 +12,16 @@ layout: single
 image: featured.png
 ---
 
+### Lancaster University.
+
+**2023 - Present**. *Lecturer in Health Data Science.*
+
+- Module convenor and lecturer for first year Introduction to Epidemiology module.
+- Special study module supervisor for MBChB Year 2 students.
+- Guest lecturer for Handling routinely collected health data MSc module.
+- Guest lecturer for Fundamentals of health data science MSc module.
+- Supervision for MSc Data Science and MSc Health Data Science Dissertation modules.
+
 ### Jumping Rivers
 
 **Nov 2021 - Apr 2023**. *Data Science Trainer**.
