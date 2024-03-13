@@ -16,7 +16,9 @@ image: featured.jpg
 
 The Statistical Excellence Award for Early-Career Writing is an annual competition run by [Significance](https://www.significancemagazine.com/) and the [RSS Young Statisticians Section](https://twitter.com/statsyss). Entrants are asked to use data and statistics to tell the stories that matter most to them. 
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">Today we (<a href="https://twitter.com/signmagazine?ref_src=twsrc%5Etfw">@signmagazine</a> and <a href="https://twitter.com/statsyss?ref_src=twsrc%5Etfw">@statsyss</a>) are pleased to announce the finalists of the 2021 Statistical Excellence Award for Early-Career Writing, with stories about luck, life expectancy, and a weather-predicting tortoise <a href="https://t.co/NbwatlYiGM">https://t.co/NbwatlYiGM</a> <a href="https://t.co/VlAsmaR6uq">pic.twitter.com/VlAsmaR6uq</a></p>&mdash; Significance (@signmagazine) <a href="https://twitter.com/signmagazine/status/1413090737537830913?ref_src=twsrc%5Etfw">July 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 Congratulations to all competition entrants, especially winner [Connor Jackson](https://www.significancemagazine.com/10-news/704-writing-comp-winner?highlight=WyJuaWNvbGEiLCJyZW5uaWUiLCJuaWNvbGEgcmVubmllIl0=), and fellow finalist Anna Beukenhorst.
 
@@ -25,7 +27,6 @@ Congratulations to all competition entrants, especially winner [Connor Jackson](
 The way that we write about statistics should vary depending on who will be reading our work. It seems like an obvious statement but it's something that, as a PhD student, I never really had to think about. Most of the statistical writing I did was for journal papers, conferences, or my thesis. Generally, a pretty small audience with similar backgrounds in statistics.
 
 Gaining some practice at explaining statistical concepts has also helped me as I transitioned into working in industry as a Data Scientist at [Jumping Rivers](https://www.jumpingrivers.com/). 
-
 
 ### We're not getting any younger! Or should that be older?
 
