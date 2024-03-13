@@ -17,7 +17,9 @@ image: featured.png
 
 I recently gave a talk to [R-Ladies Nairobi](https://twitter.com/rladiesnairobi), where I discussed the #30DayChartChallenge. In the second half of my [talk](https://nrennie.rbind.io/talks/2022-may-rladies-nairobi/), I demonstrated how I created the Goldilocks Decision Tree flowchart using {igraph} and {ggplot2}. This blog post tries to capture that process in words.
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">Such an informative session! 💡<br>For the illustration, <a href="https://twitter.com/nrennie35?ref_src=twsrc%5Etfw">@nrennie35</a> created a flow chart using the {igraph} package. We also learned about <a href="https://t.co/obbYLMOaV4">https://t.co/obbYLMOaV4</a> to add images to a plot.<br><br>Slides: <a href="https://t.co/VGJ6NN3HOO">https://t.co/VGJ6NN3HOO</a><a href="https://twitter.com/hashtag/RStats?src=hash&amp;ref_src=twsrc%5Etfw">#RStats</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://twitter.com/hashtag/30daychartchallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30daychartchallenge</a> <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> <a href="https://t.co/epaPapX0Bk">pic.twitter.com/epaPapX0Bk</a></p>&mdash; R-Ladies Nairobi 🇰🇪 (@RLadiesNairobi) <a href="https://twitter.com/RLadiesNairobi/status/1529901597291159552?ref_src=twsrc%5Etfw">May 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 Flowcharts can be a useful way to visualise complex processes. Although the example here is rather trivial and created purely for fun, nonetheless flowcharts have been a useful part of data visualistaion in my work.
 
@@ -207,7 +209,7 @@ p = ggplot() +
 I pass in the `xmin`, `xmax`, `ymin` and `ymax` values defined earlier in the `plot_nodes` tibble to `geom_rect()`, and colour the rectangles based on the `type` variable. I also make the boxes slightly transparent.
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1a.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1a.png?raw=true" alt="simple flowchart rectangles">
 </p>
 
 #### Adding labels and choosing fonts
@@ -231,7 +233,7 @@ p = p +
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1b.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1b.png?raw=true" alt="simple flowchart boxes with labels">
 </p>
 
 #### Drawing the arrows
@@ -249,7 +251,7 @@ p = p +
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1c.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot1c.png?raw=true" alt="simple flowchart">
 </p>
 
 #### Colour schemes
@@ -263,7 +265,7 @@ p = p +
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot2.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot2.png?raw=true" alt="nicer looking flowchart">
 </p>
 
 #### Adding text
@@ -277,7 +279,7 @@ p = p +
        1837.\n\nImage: New York Public Library\n\n#30DayChartChallenge") 
 ```
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot3.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot3.png?raw=true" alt="flowchart with title">
 </p>
 
 #### Editing themes
@@ -285,7 +287,7 @@ p = p +
 The final aesthetic changes are done using the `theme()` function - this lets you control the look of all the non-data elements of your plot. The first thing I change is the background colour. I chose the background colour based on the image I want to overlay later. For reference, I browsed for images with a creative commons licence and found this one from the New York Public Library.
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/img.jpg?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/img.jpg?raw=true" alt="styled flowchart">
 </p>
 
 I used [imagecolorpicker.com](https://imagecolorpicker.com/en) to extract the hex code of the background colour of the image and then set the plot background to be the same. There are two elements to changing the background colour: `panel.background` and `plot.background`. The `panel.background` argument changes the colour of the area behind the plotted data (grey by default). The `plot.background` argument changes the colour of the area around the plot (white by default).
@@ -309,7 +311,7 @@ p = p +
                                     margin = margin(t = 10)))
 ```
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot4.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/plot4.png?raw=true" alt="well styled flowchart">
 </p>
 
 #### Adding images
@@ -319,7 +321,7 @@ There are a few different packages in R that are capable of adding images on top
 And that gives us the final image:
 
 <p align="center">
-<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/final.png?raw=true">
+<img width = "80%" src="/blog/2022-06-06-creating-flowcharts-with-ggplot2/final.png?raw=true" alt="well styled flowchart with bear photo">
 </p>
 
 Hopefully, this tutorial blog demonstrated the process of creating a flowchart in R using {igraph} and {ggplot2}, and encourages you to create your own! You can also find the slides and recording of the talk I gave to R-Ladies Nairobi [here](https://nrennie.rbind.io/talks/2022-may-rladies-nairobi/).
