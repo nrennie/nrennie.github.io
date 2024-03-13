@@ -20,12 +20,11 @@ Generative art is the process of creating artwork through a set of pre-determine
 
 In October 2021, I started experimenting with generative art, and developed a [R package](https://github.com/nrennie/aRt/). I also took part in [#genuary2022](https://github.com/nrennie/genuary), the challenge running in the month of January where generative artists create art based on a different prompt each day. is an artificially generated month of time where we build code that makes beautiful things. You can view a selection of my generative art portfolio [here](https://nrennie.rbind.io/portfolio/rtistry/).
 
-
-<blockquote class="twitter-tweet" align="center"><p lang="und" dir="ltr"><a href="https://t.co/sdRpqHb1OM">https://t.co/sdRpqHb1OM</a> <a href="https://t.co/BwnS1Ntgxf">pic.twitter.com/BwnS1Ntgxf</a></p>&mdash; Nicola Rennie (@nrennie35) <a href="https://twitter.com/nrennie35/status/1488099926450094080?ref_src=twsrc%5Etfw">January 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 This blog post will outline the best practices I follow when creating generative art. Note that these are simply the practices that I tend to follow, and are not meant to be representative of the practices utilised in the wider generative art community, or a recommendation of practices to follow. 
-
 
 ### What are best practices?
 
