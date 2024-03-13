@@ -20,7 +20,7 @@ When I've created data visualisations with {ggplot2} recently, I've been adding 
 <img width="50%" src="https://raw.githubusercontent.com/nrennie/tidytuesday/main/2023/2023-02-07/20230207.png" alt="Bump chart of stock prices of different companies with adobe highlighted">
 </p>
 
-### Installing Font Awesome icons
+## Installing Font Awesome icons
 
 The first part of adding icons to {ggplot2} that we'll deal with is getting the icons themselves. To get social media icons such as those for LinkedIn or Mastodon, we'll use [Font Awesome](https://fontawesome.com/icons) icons. There are a couple of options for working with Font Awesome in R - including the [{fontawesome}](https://github.com/rstudio/fontawesome) and [{emojifont}](https://github.com/GuangchuangYu/emojifont) packages. Here, I've opted for a more direct approach - download the font file and then load the font into R.
 
@@ -36,7 +36,7 @@ showtext::showtext_auto()
 
 > Note: If you are using `ggsave()` with the default resolution of 300 dpi, you may also wish to run `showtext_opts(dpi = 300)`.
 
-### Using icons in {ggplot2} text
+## Using icons in {ggplot2} text
 
 Let's say we want to add a GitHub icon to our {ggplot2} chart caption. We first need to know the unicode for the GitHub icon. You can search for the icon you want at [fontawesome.com/icons](https://fontawesome.com/icons), and you'll see the unicode icon in the top right of the screen. Although a Google search or ChatGPT would likely work equally well...
 
@@ -76,7 +76,7 @@ ggplot() +
 
 Hmm... that's not quite done exactly what we want. We need one more thing - a little bit of help from {ggtext}!
 
-### Formatting with {ggtext}
+## Formatting with {ggtext}
 
 The reason our previous plot didn't look quite as we'd hoped is because {ggplot2} doesn't natively understand how to parse the HTML code. That where [{ggtext}](https://wilkelab.org/ggtext/) comes in. {ggtext} is an R package designed to improve text rendering in {ggplot2}, including providing support for using Markdown and HTML inside text elements. It's one of my favourite {ggplot2} extension packages, and often use it for adding coloured text to the subtitle as a substitute legend.
 
@@ -99,7 +99,7 @@ And that's how you add social media icons to plots with {ggplot2} (and {ggtext})
 
 If you think adding social media icons is something you'd do regularly, I'd recommend wrapping this code up into your own function. You can save the icon unicode values you'll need so you don't have to look them up, pass your social media usernames as arguments, and add optional arguments that control the icon colour, for example. If you want to take it one step further, you could write an R package that stores the Font Awesome font files, and makes use of `.onLoad()` to automatically load the icon fonts when you call `library(pkgname)`.
 
-### Additional resources
+## Additional resources
 
 * The {ggtext} package vignettes include some more information on using HTML and Markdown in {ggplot2} text elements if you're less familiar with these: [wilkelab.org/ggtext/articles/theme_elements](https://wilkelab.org/ggtext/articles/theme_elements.html)
 

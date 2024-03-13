@@ -22,13 +22,13 @@ Before we begin, I do want to point out that PDFs are not accessible, and genera
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-02-17-making-pretty-pdfs-with-quarto/featured.png" width = "90%" alt="Screenshot of a pdf with a light purple sidebar."><br>
 </p>
 
-### What are Quarto extensions?
+## What are Quarto extensions?
 
 [Quarto extensions](https://quarto.org/docs/extensions/) are used to modify and extend the behaviour of Quarto. Templates are just one type of Quarto extension.
 
 > Note that if you're using or developing Quarto extensions, you will most likely need to be using at least version 1.2 of Quarto.
 
-### Building a Quarto extension
+## Building a Quarto extension
 
 Here, I've developed the Quarto extension in a GitHub repository with the following structure:
 
@@ -69,7 +69,7 @@ You can see where the `PrettyPDF.tex` and `pagestyle.tex` are referenced. These 
 
 Let's talk about that `PrettyPDF.tex` file in a bit more detail...
 
-#### Load some LaTeX packages
+### Load some LaTeX packages
 
 The first thing we need to do is load some LaTeX packages, that will allow us to implement the rest of the styling options.
 
@@ -203,7 +203,7 @@ And that's everything that's in the `PrettyPDF.tex` file! This gives us a PDF th
 
 You can download a copy of the template PDF [here](template.pdf), and view the source code on [GitHub](https://github.com/nrennie/PrettyPDF).
 
-### Using this extension
+## Using this extension
 
 If you want to use this extension in your own projects, please feel free to do so! You can install the extension using the command line:
 
@@ -226,7 +226,7 @@ format:
     keep-tex: true
 ```
 
-### Adapting this extension
+## Adapting this extension
 
 If you want to update this template to use, for example, different colours or a different logo, you have two options:
 
@@ -234,15 +234,15 @@ If you want to update this template to use, for example, different colours or a 
 
 * Make a fork of the [GitHub repository](https://github.com/nrennie/PrettyPDF), and update the `_extensions/PrettyPDF/PrettyPDF.tex` file. You can then install the extension from your own GitHub.
 
-#### Changing the logo 
+### Changing the logo 
 Either replace the `logo.png` file in the `_extensions` directory with a new file of your choosing (with the same name), or change the file path on line 28 of `PrettyPDF.tex` to point to a different logo file. Note that the file path is relative to your .qmd file. You can remove lines 25-30, if you'd rather not have a logo at all.
 
-#### Changing the colours
+### Changing the colours
 Lines 14-16 of `PrettyPDF.tex` define three colours used in the template: `light`, `dark`, and `highlight`. Change the hex colours in these lines to update the colours. The `light` colour changes the sidebar and code block background colours. The `dark` colour changes the text colour, and the `highlight` colour changes the link colours.
 
 There will almost certainly be some elements of the default Quarto PDF theme that I haven't adjusted here, simply because I haven't had the need to yet. Feel free to make your own adjustments!
 
-### Further resources
+## Further resources
 
 If you're looking for more Quarto extensions, I'd highly recommend checking out the [Awesome Quarto](https://github.com/mcanouil/awesome-quarto) repository - it has links to lots of Quarto resources including talks, tools, examples, and articles.
 

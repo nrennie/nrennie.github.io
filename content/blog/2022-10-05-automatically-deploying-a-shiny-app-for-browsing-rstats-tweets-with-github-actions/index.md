@@ -23,7 +23,7 @@ A little while ago I saw this [blog post](https://www.popmusicresearch.org/post/
 <img width="80%" src="https://nrennie.rbind.io/blog/2022-10-05-automatically-deploying-a-shiny-app-for-browsing-rstats-tweets-with-github-actions/featured.png" alt="Screenshot of a shiny app">
 </p>
 
-### Building the Shiny app
+## Building the Shiny app
 
 The Shiny app itself is actually relatively simple in comparison to some other Shiny apps I've worked on - it will only contain a table of data. So first of all, we need to get that data...
 
@@ -111,7 +111,7 @@ server <- function(input, output) {
 ```
 To make the links in the table clickable, within the definition of the columns, we use `htmltools::tags$a`. To make the Shiny app a little bit more user-friendly, we also set `striped = TRUE` and `defaultPageSize = 8` to make different tweets more distinguishable, and limit the number of tweets in one page.
 
-### Deploying the Shiny app
+## Deploying the Shiny app
 
 Now that we've built the shiny app and got it working locally, we want deploy it to [shinyapps.io](https://www.shinyapps.io/). If you're working in RStudio IDE, the easiest way to deploy a Shiny app is to click the deploy button (next to Run App). If it's the first time you've deployed to shinyapps.io, you'll be prompted to authenticate. Alternatively, you can call `deployApp()` in the console to do the same thing.
 
@@ -210,7 +210,7 @@ We give the action a `name:`, and tell it when to run in the `on:` section. In t
 
 Finally, to make sure that GitHub Actions can authenticate shinyapps.io account, we pass the three variables needed in our `deploy.R` script as GitHub Secrets. GitHub Secrets are found in the settings tab for the repository. Make sure the name of the secret is the same as the variable passed into `deployApp()`. In this case, we add three secrets: `SHINY_ACC_NAME`, `TOKEN`, and `SECRET`.
 
-### Updating the Shiny app
+## Updating the Shiny app
 
 At the moment, our deployed Shiny app is essentially a static screenshot of tweets I had liked up to the point we deployed the app. Of course, I could manually pull the most recent data, and upload it to GitHub where it would be automatically re-deployed. But we can use GitHub actions to automate that as well. There are two steps to running an update:
 

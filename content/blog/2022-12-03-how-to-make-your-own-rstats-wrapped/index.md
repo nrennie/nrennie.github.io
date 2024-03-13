@@ -21,7 +21,7 @@ Around the beginning of December social media accounts start to fill with images
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2022-12-03-how-to-make-your-own-rstats-wrapped/featured.png" width = "75%", alt = "A graphic showing my top 5 most used functions during this year's TidyTuesday contributions: aes, ggplot, library, c, labs, in the style of spotify wrapped graphics onthe right. On the left a green rectangle with rstats wrapped written in pink ">
 </p>
 
-### Finding your most used functions
+## Finding your most used functions
 
 First of all, let's load the packages you're going to need:
 
@@ -106,7 +106,7 @@ imgs <- tibble(img = c("https://ggplot2.tidyverse.org/logo.png",
                        "https://ggplot2.tidyverse.org/logo.png"))
 ```
 
-### Plotting your top functions
+## Plotting your top functions
 
 Now comes the fun part - recreating the graphic! Here, you'll mainly use {ggplot2} alongside a little bit of help from {patchwork} and {ggtextures}! First let's choose and load a font using {showtext}:
 

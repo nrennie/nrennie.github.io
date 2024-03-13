@@ -24,7 +24,7 @@ Most of the time, people (if they're anything like me) aren't viewing #TidyTuesd
 <img src="twitter.png" alt="Twitter screenshot" width="60%">
 </p>
 
-### What does mobile-friendly visualisation mean?
+## What does mobile-friendly visualisation mean?
 
 In this context, I'm specifically talking about static images. Interactive dashboards and apps should also be designed for mobile, but that's a bigger topic for another day. For me, making a static data visualisation mobile friendly basically means two things:
 
@@ -38,7 +38,7 @@ Although these two things might seem straightforward, they brought up a couple o
 
 Here's where the problems start...
 
-### Problem 1: You need to set a specific size of plot
+## Problem 1: You need to set a specific size of plot
 
 As I mentioned earlier, a key part of designing for mobile is to choose a relevant aspect ratio for your plot. The easiest way to preview images in RStudio is through the **Plots** pane (usually found on the bottom right). Although you can change the size of the plot pane easily, you can't specify a height and width. 
 
@@ -52,7 +52,7 @@ dev.new(width=1080, height=2160, unit="px", noRStudioGD = TRUE)
 Here, I've specified the width and height in pixels. By setting `noRStudioGD = TRUE`, any new plots appear in the new graphics window rather than the RStudio graphics device. Other functions such as `windows()`, `x11()`, or `png()` from the {ragg} package can do similar things.
 
 
-### Problem 2: You need to save a high resolution image (that matches what you seen on screen)
+## Problem 2: You need to save a high resolution image (that matches what you seen on screen)
 
 Have you ever spent ages tinkering with a plot you're previewing in RStudio...
 
@@ -108,7 +108,7 @@ gg_record(
 )
 ```
 
-### Problem 3: You have a lot less space to work with!
+## Problem 3: You have a lot less space to work with!
 
 For me, the whole point of creating a visualisation specifically for viewing on mobile, is that you don't have to zoom in to see what the plot contains. This means your design needs to be reasonably minimal - I'd suggest a maximum of one plot, and maybe a (very short) paragraph of text. This felt a lot less than I'd normally put into a data visualisation. Usually, I'd have multiple plots, a paragraph giving context, some logos, annotations, ...
 

@@ -21,7 +21,7 @@ I'm sure many of you will have similar problems - where the interactive nature o
 <img width="50%" src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-08-22-script-templates-r/copypaste.jpg" alt="Orange jacket meme with top text reading copy and paste, and bottom text reading make an R function">
 </p>
 
-### Creating folders and files
+## Creating folders and files
 
 But first, let's make somewhere to keep our new files! For each week, I have a *week* folder with the name format `yyyy-mm-dd` nested inside a *year* folder with the format `yyyy`, and inside that folder I have a .R file with a name in the format `yyyymmdd.R` and a `README.md` file.
 
@@ -66,7 +66,7 @@ if (!file.exists(new_readme)) {
 
 Now let's put some things into those files...
 
-### Creating a template README file
+## Creating a template README file
 
 Let's start with a template for the `README.md` file since it's a little bit simpler. An example of one of my README files looks like this:
 
@@ -116,7 +116,7 @@ writeLines(readme_txt, con = new_readme)
 message("'README.md' contents copied")
 ```
 
-### Creating a template .R file
+## Creating a template .R file
 
 The process for creating, copying, and writing the .R file will be similar to the README template process. Let's start by creating a file `r-template.R`. This will be very specific to your use case, and for me it's a file that's evolved over several years of #TidyTuesday contributions. In this file, I'll
 
@@ -224,7 +224,7 @@ message("'.R' contents copied")
 ```
 The only thing that's different about this code is the `replacement` argument. Here, we want to make sure that we copy with quotation marks, not just the variable value. For example, we want to replace `date_chr` with `"2023-08-22"` not `2023-08-22`.
 
-### Building a function
+## Building a function
 
 Although you could leave all this code in a script, it will be much easier to use if you wrap it into a function. When putting this code into a function, there were a couple of key things I kept in mind:
 
@@ -322,7 +322,7 @@ use_tt_template <- function(date_chr = "2023-08-22",
 ```
 {{< /detail-tag >}}
 
-### Additional resources
+## Additional resources
 
 If you've never made a function in R before, the [R for Data Science](https://r4ds.hadley.nz/functions) book has some excellent information and examples to get started!
 

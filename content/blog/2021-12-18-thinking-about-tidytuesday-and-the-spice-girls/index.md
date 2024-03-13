@@ -34,7 +34,7 @@ It can be a little bit scary to make your first (or any) contribution to #TidyTu
 Image from tenor.com/view/wannabe-spice-girls-gif-13245102
 </p>
 
-### Exploring the data
+## Exploring the data
 
 This week there are actually three different data sets. Although this can be a good opportunity to practice different types of joins of dataframes, to avoid getting overwhelmed, it might be a good idea to just focus on one of these data sets. I'm going to focus on the studio_album_tracks data. 
 
@@ -44,7 +44,7 @@ Since I come from a time series/forecasting background, the first thing that cat
 
 There are quite a lot of variables with values between 0 and 1 e.g. danceability, energy, ... This makes me think that a spider plot (AKA radar plot) might be appropriate. I also keep a list of plot types/packages that I'd like to experiment with and spider plots are one of the chart types on my list. I've never made a spider plot in R before so this will be a learning experience for me too. Not everyone is a fan of spider plots but it’s still useful to learn new things.
 
-### Building a basic plot
+## Building a basic plot
 
 So let's make a spider plot showing the average danceability, energy, speechiness, acousticness, instrumentalness, liveness, valence for each of the albums released. 
 
@@ -58,7 +58,7 @@ Now for the fun part – plotting! There isn't a built in geom within {ggplot2} 
 
 I now have a basic spider plot, and I can get started think a bit about design.
 
-### Making it look pretty
+## Making it look pretty
 
 Viewing the help files for the package (or function) are really useful in helping me to decide what elements of the spider plot I can customise easily. 
 
@@ -74,6 +74,6 @@ Now the only thing left to do is post the final version to twitter with the #Tid
 
 The code for this plot is on [GitHub](https://github.com/nrennie/tidytuesday/tree/main/2021/14-12-2021) if you want to play around with it and create your own version. 
 
-### Final Thoughts
+## Final Thoughts
 
 I'll blog about my experience of curating in a later post, but for now I hope that sharing my process for creating a data visualisation has been helpful. Why don't you participate in your first #TidyTuesday if you haven't already?

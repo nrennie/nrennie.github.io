@@ -38,7 +38,8 @@ I saw this tweet from @[aabattani](https://twitter.com/aabattani) reflecting on 
 <p align="center">
 <img src="twitter5.png" alt="Twitter screenshot" width="60%">
 </p>
-#### First visualisation
+
+## First visualisation
 
 My first contribution to #TidyTuesday back in January 2021 visualised the cost of different infrastructure projects. I still quite like this plot, although there are a few things I'd do differently. I'd probably colour and sort these by continent because the order of countries doesn't make much sense. Different colours for pre- and post- 2021 expenditure may also be more helpful than a dashed line. I would also add a more detailed subtitle or summary to explain what's going on. 
 
@@ -50,7 +51,7 @@ Overall, I think this was a pretty good first attempt.
 <img src="twitter4.png" alt="Twitter screenshot" width="60%">
 </p>
 
-#### Most recent visualisation
+## Most recent visualisation
 
 I had the idea for this one in my head when I saw the data set, so it was more about trying to create the idea I had rather than playing around with different ideas. 
 
@@ -62,7 +63,7 @@ I really like the clean, minimalist design of this one.
 <img src="twitter3.png" alt="Twitter screenshot" width="60%">
 </p>
 
-#### Favourite visualisation
+## Favourite visualisation
 
 My favourite data for #TidyTuesday in 2021 came from the Duke Lemur Center. One of the nice features was the personal data on each lemur, so you could track individual lemurs and their offspring over time. This was the point of the year, where I started to experiment with the graphic design side of visualisation more using package like {cowplot} and {patchwork} to combine plots and overlay images (like this one of an adorable lemur). 
 
@@ -72,7 +73,7 @@ I also ended up following the Duke Lemur Center on twitter after this so my twit
 <img src="twitter2.png" alt="Twitter screenshot" width="60%">
 </p>
 
-#### Visualisation I'd like to redo
+## Visualisation I'd like to redo
 
 I remember having a bit of an idea for this plot, but not quite knowing how to create it, I ended up using the {ggbump} package to create the sigmoids. Several weeks later, I discovered that this was actually called a Sankey chart and that there was a {ggplot2} compatible R package for creating them called {ggalluvial}. I've used it several times since, and I think it would definitely improve the execution of this idea. 
 
@@ -80,7 +81,7 @@ I remember having a bit of an idea for this plot, but not quite knowing how to c
 <img src="twitter1.png" alt="Twitter screenshot" width="60%">
 </p>
 
-### Final thoughts
+## Final thoughts
 
 Overall, #TidyTuesday has been one of the best and most fun work-related things I decided to do on 2021. During my PhD, although I had a lot of data, it all looked quite similar so there wasn't a lot of opportunity to experiment with different plots. #TidyTuesday is a nice environment to experiment with different plots and packages because you don't have to get it right. For me at least, it's about trying something new rather than making publication-ready plots. I'm definitely looking forward to participating in #TidyTuesday in 2022, and beyond. 
 

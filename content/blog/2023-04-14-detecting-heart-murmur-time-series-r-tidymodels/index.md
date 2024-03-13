@@ -17,7 +17,7 @@ math: true
 
 Time series data often contains information that's not easily seen when simply visualising the data. We can uncover these hidden features using time series analysis, and use them to classify time series that exhibit similar features.
 
-### Data
+## Data
 
 In this blog post, we'll extract features from and classify time series relating to sound recordings of patients' heart beats. The data comes from the [CirCor DigiScope Phonocardiogram Dataset](https://www.physionet.org/content/circor-heart-sound/1.0.3/), and consists of 5,272 heart sound recordings of 1,568 different patients. The data can be downloaded from [www.physionet.org/content/circor-heart-sound/1.0.3](https://www.physionet.org/content/circor-heart-sound/1.0.3/) - see references at the end of this post for full attribution.
 
@@ -94,7 +94,7 @@ In addition to the sound recording data, information on the subjects such as hei
 |PV       |    585|     146|
 |TV       |    562|     142|
 
-### Calculating time series features
+## Calculating time series features
 
 The [{tsfeatures}](https://pkg.robjhyndman.com/tsfeatures/index.html) package provides support for calculating these time series features in R. Not all features will be useful. For example, trend: we know that there isn't an increasing trend, given the nature of the sound recording data, so we don't need to compute this.
 
@@ -133,7 +133,7 @@ all_fts <- purrr::map_dfr(.x = all_files,
 ```
 {{< /detail-tag >}}
 
-### Comparing features in subjects with and without murmurs
+## Comparing features in subjects with and without murmurs
 
 Let's compare these time series features for subjects with and without heart murmurs. In this analysis, only subjects that have complete data were considered: recordings available at all four locations, and data relating to sex, height, and weight has no missing values - a total of 533 patients.
 
@@ -197,7 +197,7 @@ ggplot(all_data) +
 ```
 {{< /detail-tag >}}
 
-### Fitting a model with {tidymodels}
+## Fitting a model with {tidymodels}
 
 The {tidymodels} framework is a collection of R packages that can be used for statistical modelling and machine learning. Before rushing into fitting and evaluating different models, let's think a little bit about the data we have:
 
@@ -493,7 +493,7 @@ p1 + p2 + plot_layout(ncol = 2)
 ```
 {{< /detail-tag >}}
 
-### Overall results
+## Overall results
 
 Well, that didn't work quite so well... This isn't ideal, but we can still draw some conclusions. And also let's normalise sharing the results that don't always tell us what we want!
 
@@ -511,7 +511,7 @@ There may or may not be a part two to this blog, where I'll look at some alterna
 
 * Dealing with the imbalanced nature of the data. 
 
-#### References
+### References
 
 Oliveira, J., Renna, F., Costa, P., Nogueira, M., Oliveira, A. C., Elola, A., Ferreira, C., Jorge, A., Bahrami Rad, A., Reyna, M., Sameni, R., Clifford, G., & Coimbra, M. (2022). The CirCor DigiScope Phonocardiogram Dataset (version 1.0.3). *PhysioNet*. [doi.org/10.13026/tshs-mw03](https://doi.org/10.13026/tshs-mw03).
 

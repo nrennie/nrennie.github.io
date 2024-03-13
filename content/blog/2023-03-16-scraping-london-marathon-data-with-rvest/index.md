@@ -23,7 +23,7 @@ That's where {rvest} comes in. {rvest} is an R package within the {tidyverse} wh
 
 > A note on web-scraping: many websites have a `robots.txt` file which contains instructions for bots that tell them which webpages they can and cannot access. The relies on voluntary compliance, so please check a websites `robots.txt` file before you jump straight to web-scraping. If you're scraping multiple pages, you can use the [{polite}](https://dmi3kno.github.io/polite/) package to make sure you respect the `robots.txt` file.
 
-### Loading the R packages
+## Loading the R packages
 
 For the process of scraping the London Marathon data from [Wikipedia](https://en.wikipedia.org/wiki/List_of_winners_of_the_London_Marathon), we need five R packages: {rvest} for web-scraping, {dplyr} for manipulating the scraped data, {lubridate} and {chron} for working with the time data (optional depending on your use case), and {readr} to save the data for re-use later.
 
@@ -34,7 +34,7 @@ library(lubridate)
 library(chron)
 library(readr)
 ```
-### Scraping the data
+## Scraping the data
 
 Now let's actually get the data! The key function in {rvest} is `read_html()` which does what it says on the tin and reads in the HTML code used on the site you pass in as the first argument:
 
@@ -60,7 +60,7 @@ london <- london %>%
 ```
 Here, I've passed in `".wikitable.sortable"` to `html_elements()`. Here, `html_elements()` grabs all the elements which have `".wikitable.sortable"` as their CSS class. I determined that `".wikitable.sortable"` was the class I was looking for by using `Inspect` on the Wikipedia page (use the Ctrl + Shift + I shortcut). The `html_table()` then tidies this up even further, and returns a list of tibbles where each list entry is a different table from the Wikipedia page.
 
-### Tidying it up
+## Tidying it up
 
 The first four tibbles contain information on the four categories of racing at London Marathon, and the fifth contains a summary table by country. Since the fifth table data can be captured from the first four, and it's in a completely different format, I decided to discard it. Now what I want to do is combine the remaining four tibbles into a single tibble, with an additional column determining which race the data relates to. 
 
@@ -94,7 +94,7 @@ write_csv(winners, file = "winners.csv")
 saveRDS(winners, file = "winners.rds")
 ```
 
-### Repeating the process
+## Repeating the process
 
 I decided to repeat the process for data on number of London Marathon participants, and how much charity money was raised, as this might pose some interesting questions for further analysis. You can see here, that the process is quite similar:
 
@@ -123,7 +123,7 @@ write_csv(london_marathon, file = "london_marathon.csv")
 saveRDS(london_marathon, file = "london_marathon.rds")
 ```
 
-### Working with the data
+## Working with the data
 
 Now, we can work with the scraped data in the same way we'd work with any other (cleaned up) data in R! Including making plots!
 
@@ -142,7 +142,7 @@ data(winners, package = "LondonMarathon")
 data(london_marathon, package = "LondonMarathon")
 ```
 
-### Final thoughts
+## Final thoughts
 
 I hope this blog post has convinced you that scraping data from a website does need to be as difficult as it sounds, and that it's a better option that copying and pasting! The code, data, data dictionary, and a few exploratory plots can be found on [GitHub](https://github.com/nrennie/LondonMarathon).
 

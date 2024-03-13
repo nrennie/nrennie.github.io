@@ -16,7 +16,7 @@ image: featured.png
 
 The #30DayChartChallenge is a data visualisation challenge organised by [Cédric Scherer](https://twitter.com/CedScherer) and [Dominic Royé](https://twitter.com/dr_xeo). Participants make one chart each day of the challenge, inspired by the daily prompt. The prompts are also split across 5 different categories. Check out the challenge at [twitter.com/30DayChartChall](https://twitter.com/30DayChartChall). All of my contributions can be seen on my [portfolio page](https://nrennie.rbind.io/portfolio/data-visualisation/#30daychartchallenge).
 
-### Why did I create 30 charts?
+## Why did I create 30 charts?
 
 There were a number of reasons I decided to participate in the #30DayChartChallenge:
 
@@ -26,7 +26,7 @@ There were a number of reasons I decided to participate in the #30DayChartChalle
 * Exposed to a wider range of tools. I've been participating in #TidyTuesday for a while and it's been really helpful. #TidyTuesday is primarily aimed at the R community, but the #30DayChartChallenge attracts people who make data visualisations using all sorts of tools. It's a good opportunity to see how else you can do the things you're already doing.  
 * To have fun. Probably the most important reason. For me, data visualisation lies at the intersection of a bunch of things I really enjoy: statistics, science communication, art, programming... I genuinely enjoy data visualisation, and it's nice to be able to make the charts that I want to make. 
 
-### How did I create 30 charts?
+## How did I create 30 charts?
 
 For the 2022 challenge, I used a range of tools to create my charts, including R, Python, Tableau, rawgraphs, Inkscape, and Figma. Most of the charts I created were built in R, but I used at least one "new" tool for each of the six categories. 
 
@@ -50,13 +50,13 @@ From both the new tools and new R packages I tried, there were lots of new cool 
 <img src="https://github.com/nrennie/30DayChartChallenge/blob/main/2022/viz/day_26.png?raw=true" width="50%" alt="data visualisation">
 </p>
 
-### What will I take from this going forward?
+## What will I take from this going forward?
 
 I've spent a lot of time in the past, (painstakingly) arranging annotations and logos on top of plots in R. It is possible but it's not the quickest way. In future, unless there is a programmatic need (e.g. I'll be making a plot lots of times), I'm more likely to add the final flourishes in something like Inkscape or Figma. There's no need for a chart to be 100% code.
 
 Similarly, I'd like to explore less-programmatic ways of creating charts a bit more - tools liek Tableau or PowerBI are very popular. As someone who enjoys data visualisation it seems remiss of me not to spend more time working with them.
 
-### My favourite chart
+## My favourite chart
 
 Of the 30 charts I made, it's difficult to pick a favourite. For me, the Goldilocks Decision Tree for the "storytelling" theme on day 29 probably wins. For this chart, I learned how to create a flowchart using {ggplot2} which was actually surprisingly tricky. The interpretation of the prompt also feels quite abstract (which I like), and I can't think of any other time when I'd make a plot quite like this.
 
@@ -64,7 +64,7 @@ Of the 30 charts I made, it's difficult to pick a favourite. For me, the Goldilo
 <img src="https://github.com/nrennie/30DayChartChallenge/blob/main/2022/viz/day_29_final.png?raw=true" width="50%" alt="data visualisation">
 </p>
 
-###  Other favourite charts I saw
+##  Other favourite charts I saw
 
 My twitter feed definitely got prettier during the month of April as it filled up with charts. I saw so many charts, it's impossible to list them all. So here are just a few of my personal favourites:
 
@@ -86,7 +86,7 @@ My twitter feed definitely got prettier during the month of April as it filled u
 <img src="twitter1.png" alt="Twitter screenshot" width="60%">
 </p>
 
-### Final Thoughts
+## Final Thoughts
 
 I'd definitely recommend participating to anyone thinking about taking part in the the #30DayChartChallenge - and no, you don't **have** to do all 30 days. It was a lot of fun to create different charts, I learnt a bunch of new things, and I saw so many beautiful charts from other people.
 

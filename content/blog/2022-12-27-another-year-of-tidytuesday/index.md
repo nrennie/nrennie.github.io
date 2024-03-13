@@ -51,7 +51,7 @@ And now it's time for a recap of the year, where I show my:
 * favourite visualisation of 2022,
 * *one I'd like to re-do* visualisation of 2022!
 
-### My first visualisation of 2022
+## My first visualisation of 2022
 
 The first week of #TidyTuesday in 2022 was a "bring your own data" week! For this plot I tried out the aforementioned {geomtextpath} package to write some text in a spiral. The data behind this plot was the introduction to my recently completed PhD thesis. I quite liked this plot - the minimalist style was a theme I definitely leaned into this year!
 
@@ -59,7 +59,7 @@ The first week of #TidyTuesday in 2022 was a "bring your own data" week! For thi
   <img src="https://github.com/nrennie/tidytuesday/blob/main/2022/2022-01-04/20220104.jpg?raw=true" width="60%">
 </p>
 
-### My last visualisation of 2022
+## My last visualisation of 2022
 
 The last #TidyTuesday visualisation of 2022 (from today) looked at the titles in Star Trek: The Next Generation (Starfleet Academy) book series. I decided to keep this one visually simple, but there are two new things I tried in this visualisayion:
 
@@ -71,7 +71,7 @@ The last #TidyTuesday visualisation of 2022 (from today) looked at the titles in
   <img src="https://raw.githubusercontent.com/nrennie/tidytuesday/main/2022/2022-12-27/20221227.png" width="60%">
 </p>
 
-### My favourite visualisation of 2022
+## My favourite visualisation of 2022
 
 Okay, so maybe this is cheating since it's technically three visualisation... For this data set on psychometric scores of TV characters, I made radar plots showing the personality traits of different Killing Eve characters. I'm not generally a huge fan of radar plots, but for this week I was mostly focused on the design elements - which I think turned out really well! I focused on designing these plots to be viewed on mobile (since many of us spend too much time scrolling on our phones...) and tried to create *character cards* for three of the characters.
 
@@ -81,7 +81,7 @@ Okay, so maybe this is cheating since it's technically three visualisation... Fo
   <img src="https://github.com/nrennie/tidytuesday/blob/main/2022/2022-08-16/20220816_files/figure-html/carolyn-1.png?raw=true" width="20%">
 </p>
 
-### My *one I'd like to re-do* visualisation of 2022
+## My *one I'd like to re-do* visualisation of 2022
 
 For this data set on Kaggle's Hidden Gems, I looked at the sentiment analysis of notebook titles. The plot shows there's no real change over time - which isn't a very exciting finding. Part of the reason, I don't like this plot so much is that it was created as an interactive HTML widget, which naturally doesn't look so good as a static screenshot. I also don't think the styling feels very neat, so I'd like to have another go at this one...
 
@@ -100,7 +100,7 @@ So that's exactly what I did! In this re-worked version if the visualisation, I 
 
 You can download the code to create the re-worked version from my [website](tidytuesday.R).
 
-### Getting started with #TidyTuesday
+## Getting started with #TidyTuesday
 
 If you've read this far, and you're thinking about joining in with #TidyTuesday and haven't already - I'd highly recommend it! Some useful resources for getting started:
 
@@ -110,7 +110,7 @@ If you've read this far, and you're thinking about joining in with #TidyTuesday 
 
 Searching for #TidyTuesday on Twitter, LinkedIn, or Mastodon should also give some inspiration for what can be created in R!
 
-### Final thoughts
+## Final thoughts
 
 The code for all of my #TidyTuesday contributions is on [GitHub](https://github.com/nrennie/tidytuesday), and you can view a curated selection of my favourite contributions on my [portfolio page](https://nrennie.rbind.io/portfolio/tidytuesday/).
 

@@ -18,7 +18,7 @@ image: featured.png
 
 Making plots that are aesthetically pleasing has always been an important aspect of data visualisation to me. And when I later started creating generative art, I  would spend time choosing colours purely based on whether they looked good together. On whether they made art that was *pretty*. Eventually, it became easier to convert those colours into a colour palette R package to avoid copying and pasting hex colours all the time. And so {PrettyCols} came to be. And yes, I did shorten it to *Cols* to avoid having to choose whether or not to put a *u* in colour...
 
-### Installing and using {PrettyCols}
+## Installing and using {PrettyCols}
 
 {PrettyCols} is now on [CRAN](https://cran.r-project.org/package=PrettyCols). Install it using:
 
@@ -58,7 +58,7 @@ An individual palette can be viewed or used through the `prettycols()` function.
 
 The package [vignettes](https://nrennie.github.io/PrettyCols/articles/viewing-palettes.html) give examples of changing the values of these arguments.
 
-### Does {PrettyCols} work with {ggplot2}?
+## Does {PrettyCols} work with {ggplot2}?
 
 Yes! {PrettyCols} has four key functions that mean you can use the palettes to customise your plots made with {ggplot2}. 
 
@@ -69,7 +69,7 @@ Yes! {PrettyCols} has four key functions that mean you can use the palettes to c
 
 These four functions mean that you can use the palettes for either discrete or continuous variables, mapped to either the `fill` or `colour` aesthetics. If you want some more details on how you can use {PrettyCols} with your {ggplot2} plots, read the [Using with {ggplot2}](https://nrennie.github.io/PrettyCols/articles/using-with-ggplot2.html) vignette.
 
-### What's coming next?
+## What's coming next?
 
 {PrettyCols} is currently a work in progress, and there are already a few things on my list to add into the next release! Upcoming features will include:
 
@@ -80,7 +80,7 @@ These four functions mean that you can use the palettes for either discrete or c
 
 These features are currently listed as issues on GitHub, and I will slowly work my way through them. If you have other suggestions for new features, or if you find a bug, please create an issue in the [GitHub repository](https://github.com/nrennie/prettycols/issues).
 
-### Some generative art examples
+## Some generative art examples
 
 Since the motivation behind this colour palette package was for using in generative art, it seems only fair to include a few examples of generative art that uses {PrettyCols}! All of the examples here can be reproduced using my {aRt} package, which can be found on [GitHub](https://github.com/nrennie/aRt).
 
@@ -142,7 +142,7 @@ aRt::fading(n_layers = 10,
 ```
 {{< /detail-tag >}}
 
-### The most important part...
+## The most important part...
 
 Of course, the most important part of any R package is the hex sticker! You might recognise the background as being one of the generative art pieces created above.
 

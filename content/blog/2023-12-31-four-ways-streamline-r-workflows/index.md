@@ -16,7 +16,7 @@ In previous years, when it gets to the end of the year, I've written blog posts 
 
 Finding ways to reduce manual tasks when programming, like copying and pasting files or code, can save time and minimise the risk of errors. This blog post will guide you through a few small changes to R workflow that help to reduce manual tasks (basically, a blog post about how to copy and paste less)!
 
-### Using template files
+## Using template files
 
 Earlier this year, I realised I was doing a lot of copying and pasting of code from one file to another on a regular basis. Like many things in the world of programming, if you find yourself copying and pasting the same thing several times, there is almost certainly a better way of doing it. I noticed that my R scripts for [#TidyTuesday](https://github.com/nrennie/tidytuesday) always have similar sections: load packages, load data, data wrangling, make a plot, save the plot, and so on -  and I was copying and pasting these common sections, then removing the unnecessary parts. 
 
@@ -26,7 +26,7 @@ So I decided to created a function that creates these template files for me. The
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-12-31-four-ways-streamline-r-workflows/scripts.png" width = "60%" alt="Screenshot of code to write template files">
 </p>
 
-### Using GitHub repository templates
+## Using GitHub repository templates
 
 Okay, so this isn't technically an *R* specific tip but it has been very useful for saving time in R workflows. Using template files and functions as I described above are really useful if you're creating a small number of files. However, if you're creating multiple directories and multiple files, then [GitHub template repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) are really helpful. The idea is similar to template files - starting projects with a skeleton, rather than starting from scratch.
 
@@ -38,7 +38,7 @@ As another example, the [Real World Data Science article template](https://githu
 
 > Tip: If you're including GitHub Actions files in the template, then it might useful to disable GitHub actions for the template repository. This means it won't try to run the actions in the template repository itself. 
 
-### Linting and styling code with {lintr} and {styler}
+## Linting and styling code with {lintr} and {styler}
 
 Writing code that follows a consistent style can make it easier for people to read, makes collaboration simpler, and can help pick up code errors more quickly. In R, the [{lintr}](https://lintr.r-lib.org/) package checks for adherence to a specified coding style and identifies possible syntax errors, then reports them to you so you can take action. I've been using {lintr} for a while and it's definitely helped me to write better quality code - you can also set up [GitHub Actions](https://lintr.r-lib.org/#setting-up-github-actions) to run linting checks automatically.
 
@@ -46,7 +46,7 @@ This year, I also started using the [{styler}](https://styler.r-lib.org/) packag
 
 Creating a keyboard shortcut for the `style_active_file()` function has been one of the simplest changes I've made. It means I can apply the styling easily (without having to call a function manually or click a specific button) as I'm still developing the code rather than waiting until the end to *tidy up the code*!
 
-### Building Quarto extensions
+## Building Quarto extensions
 
 These days, I make most of my documents and slides using [Quarto](https://quarto.org/). If you haven't used Quarto before, it's an open-source scientific and technical publishing system that allows you to combine text with code to create fully reproducible documents in a variety of formats -  and I highly recommend checking it out. There are lots of ways to customise the way that Quarto outputs look - using built-in options or adding your own CSS styling, for example. Quarto extensions are a way to modify and extend the behaviour of Quarto, including adding additional document styles.
 
@@ -60,7 +60,7 @@ I'll also be running a workshop as part of the *Workshops for Ukraine* series on
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-12-31-four-ways-streamline-r-workflows/prettypdf.png" width = "60%" alt="Screenshot of PDF with purple styling">
 </p>
 
-### What's next for 2024?
+## What's next for 2024?
 
 I'm planning to finally start integrating *Nix* into my R workflows, after reading several great blog posts about it by [Bruno Rodrigues](https://www.brodrigues.co/about/me/) this year. Nix is essentially a package manager that you can use to install software. With Nix, you can always install the same, specific versions of all the software and R packages you've used whenever you build an environment to run your code - making it excellent for reproducible workflows. [Part 1](https://www.brodrigues.co/blog/2023-07-13-nix_for_r_part1/) of Bruno's blog post is a great place to get started!
 
