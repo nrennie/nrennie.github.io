@@ -20,7 +20,9 @@ I've been contributing to #TidyTuesday challenges for about two years now, and m
 
 Most of the time, people (if they're anything like me) aren't viewing #TidyTuesday contributions on a laptop screen, they see them as they scroll through Twitter on their phone. Yet despite having made hundreds of #TidyTuesday visualisations, I've never intentionally thought about the way it would appear on a phone screen. And I'm guilty of that in other R development work - like Shiny apps. So this week, I decided to do something a little bit different - design my #TidyTuesday data visualisation specifically for viewing on mobile.
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">This week&#39;s <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> is about personality test results - I focused on Killing Eve characters! Inspired by <a href="https://twitter.com/bear_jordan_?ref_src=twsrc%5Etfw">@bear_jordan_</a> to try mobile-friendly data viz formats! Thanks to <a href="https://twitter.com/tanya_shapiro?ref_src=twsrc%5Etfw">@tanya_shapiro</a> for the data and plot inspiration!<br><br>Code: <a href="https://t.co/XiCurLLHFI">https://t.co/XiCurLLHFI</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataViz?src=hash&amp;ref_src=twsrc%5Etfw">#DataViz</a> <a href="https://t.co/ZQeoD6xcoE">pic.twitter.com/ZQeoD6xcoE</a></p>&mdash; Nicola Rennie (@nrennie35) <a href="https://twitter.com/nrennie35/status/1559513805440385027?ref_src=twsrc%5Etfw">August 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 ### What does mobile-friendly visualisation mean?
 
@@ -55,13 +57,13 @@ Here, I've specified the width and height in pixels. By setting `noRStudioGD = T
 Have you ever spent ages tinkering with a plot you're previewing in RStudio...
 
 <p align="center">
-<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/nice.png?raw=true">
+<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/nice.png?raw=true" alt="nicely rendered plot">
 </p>
 
 ... and then used `ggsave()` to save a higher resolution image, and ended up with something like this:
 
 <p align="center">
-<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/not_nice.png?raw=true">
+<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/not_nice.png?raw=true" alt="badly rendered plot">
 </p>
 
 If you're previewing plots in the RStudio graphics, or in one of the other options I suggested as a solution to problem 1 above, then you're (usually) looking at an image with a resolution of 96 dpi (dots per inch). In contrast, `ggsave()` uses 300 dpi by default - it's what makes the saved images have a higher resolution. Unfortunately, because we're previewing and saving with different dpi, our plots can look completely different after we save the final version. Although you can simply use `ggsave()` from the start, and repeatedly save over your plot, then open the file to preview it - I find that quite a tedious process and wanted something a little bit more automated. 
@@ -111,7 +113,7 @@ gg_record(
 For me, the whole point of creating a visualisation specifically for viewing on mobile, is that you don't have to zoom in to see what the plot contains. This means your design needs to be reasonably minimal - I'd suggest a maximum of one plot, and maybe a (very short) paragraph of text. This felt a lot less than I'd normally put into a data visualisation. Usually, I'd have multiple plots, a paragraph giving context, some logos, annotations, ...
 
 <p align="center">
-<img width = "30%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/villanelle-1.png?raw=true">
+<img width = "30%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/villanelle-1.png?raw=true" alt="portrait data visualisation of villanelle personality">
 </p>
 
 **Solution**: Create more than one image.
@@ -119,11 +121,7 @@ For me, the whole point of creating a visualisation specifically for viewing on 
 Don't make plots with more in them, make more plots! For the example from this week's #TidyTuesday, I created three separate images, one for each of the three main characters in Killing Eve. Normally, I would use `facet_wrap()` here to automatically create a plot for each character and arrange them in a single row or column. But three plots would have been too much information, with plots too small, for a mobile screen. Instead, three separate images, each with the same theming and styling to create a gallery effect, works much better.
 
 <p align="center">
-<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/featured.png?raw=true">
+<img width = "80%" src="/blog/2022-08-16-designing-tidytuesday-visualisations-for-mobile-with-quarto/featured.png?raw=true" alt="three portrait visualisations">
 </p>
 
 You can find my code for this week's #TidyTuesday on [GitHub](https://github.com/nrennie/tidytuesday/tree/main/2022/2022-08-16). Any other tips for creating data visualisations for mobile?
-
-
-
-
