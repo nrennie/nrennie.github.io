@@ -21,7 +21,9 @@ image: featured.png
 
 I recently found some time to explore {gt} and make a table which combines textual data with plots, to visualise the most spoken languages in the world. This blog post will demonstrate how to create a basic {gt} tables, adding plots as a column, and editing the look of the table. All code used in this post is available in this [GitHub repository](https://github.com/nrennie/gt_tables/tree/main/Languages). 
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">Finally got around to playing with the {gt} package for the first time this week, following this tutorial from <a href="https://twitter.com/BjnNowak?ref_src=twsrc%5Etfw">@BjnNowak</a>! Tested it using a <a href="https://twitter.com/DiversityinData?ref_src=twsrc%5Etfw">@DiversityinData</a> dataset on the most spoken languages in the world 🌍<br><br>Code: <a href="https://t.co/NKwxVydkzi">https://t.co/NKwxVydkzi</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataViz?src=hash&amp;ref_src=twsrc%5Etfw">#DataViz</a> <a href="https://twitter.com/hashtag/DataVisualization?src=hash&amp;ref_src=twsrc%5Etfw">#DataVisualization</a> <a href="https://t.co/Co6KojMPn0">https://t.co/Co6KojMPn0</a> <a href="https://t.co/JknX7JhZMY">pic.twitter.com/JknX7JhZMY</a></p>&mdash; Nicola Rennie (@nrennie35) <a href="https://twitter.com/nrennie35/status/1504801290894954503?ref_src=twsrc%5Etfw">March 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 This blog post assumes you have some basic knowledge of {tidyverse} packages - mainly {dplyr} and `%>%`, the pipe operator. Although it will demonstrate the data wrangling process, it is not the focus of the blog post. We'll be using multiple packages from the {tidyverse}, along with {readxl} to read in the data, {purrr} to create multiple plots, and of course {gt}. 
 
@@ -192,7 +194,7 @@ tb <- tb %>%
 This results in the table shown below. 
 
 <p align="center">
-<img src="table1.png?raw=true">
+<img src="table1.png" alt="Basic looking table">
 </p>
 
 All the key components we need are there, but we may want to add some styling to improve the finished look.
@@ -314,9 +316,8 @@ tb <- tb %>%
 The final table now looks a little more polished.
 
 <p align="center">
-<img src="languages.png?raw=true">
+<img src="languages.png" alt="Better looking table">
 </p>
-
 
 ### Saving your {gt} table
 
