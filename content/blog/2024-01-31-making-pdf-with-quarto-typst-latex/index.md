@@ -22,7 +22,7 @@ LaTeX is excellent for including mathematical notation in your documents, and gi
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2024-01-31-making-pdf-with-quarto-typst-latex/featured.png" width = "60%" alt="Flowchart of PDF created with Quarto and Typst or LaTeX">
 </p>
 
-### What is Typst?
+## What is Typst?
 
 [Typst](https://typst.app/docs) is a *markup-based typesetting system that is designed to be as powerful as LaTeX while being much easier to learn and use* which has been around since late December 2022. In even more exciting news, with the [latest release of Quarto](https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/), it's now possible to create PDF documents with Quarto using Typst. To use Typst with Quarto, set the `format` in the YAML of your Quarto document:
 
@@ -35,12 +35,11 @@ format: typst
 
 There are also some existing Quarto extensions which provide [custom Typst formats for Quarto](https://quarto.org/docs/output-formats/typst-custom.html) that you can use to add styling to your documents. So how easy is it create custom formats with Typst?
 
-### Custom formatting with Typst
+## Custom formatting with Typst
 
 Almost a year ago, I created a Quarto extension to add LaTeX styling to PDF outputs in order to make slightly nicer looking PDFs, with an [accompanying blog post](https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/) to explain the process. So it's only natural to come back a year later and try to recreate the same styling using Typst instead of LaTeX...
 
 The Typst website provides some [guidance on creating templates](https://typst.app/docs/tutorial/making-a-template/), but as a newbie to Typst, I found it a little bit hard to follow. I started by looking at the [Department News Quarto Typst extension](https://github.com/quarto-ext/typst-templates/tree/main/dept-news) because the PDF output looked somewhat similar to what I was trying to achieve - a coloured box in the background, an image in a specific place, and some formatted text. 
-
 There are two files here we need:
 
 * **typst-show.typ**: a file that calls the template. It maps Pandoc metadata to template function arguments.
@@ -103,7 +102,7 @@ quarto use template nrennie/PrettyPDF
 
 > Note: the default template still uses LaTeX PDF, so you'll need to update the YAML in the .qmd file to `format: PrettyPDF-typst`, and ensure you have Quarto 1.4 installed if you want to use the Typst version.
 
-### Typst vs LaTeX
+## Typst vs LaTeX
 
 Let's see how Typst compares to LaTeX when it comes to making PDF documents in Quarto. 
 
@@ -120,7 +119,7 @@ What do I like more about LaTeX?
 
 So, will I be using Typst if I'm creating PDF documents with Quarto? Yes, (unless I have to write a lot of equations...)
 
-### Further resources
+## Further resources
 
 If you're thinking about trying out Typst and you're already a LaTeX user, you might find the [official Typst *Guide for LaTeX Users* ](https://typst.app/docs/guides/guide-for-latex-users/) useful.
 
