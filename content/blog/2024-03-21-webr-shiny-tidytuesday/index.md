@@ -6,7 +6,7 @@ categories:
   - TidyTuesday
   - Shiny
   - GitHub
-date: "2024-03-19"
+date: "2024-03-21"
 slug: "Shinylive, GitHub Actions, and R - the magic combination to create an app that updates itself every week. This blog post gives a walk-through of scheduled data collection, building a Shiny app to display it, and deploying with Shinylive."
 draft: false
 excerpt: "Shinylive, GitHub Actions, and R - the magic combination to create an app that updates itself every week. This blog post gives a walk-through of scheduled data collection, building a Shiny app to display it, and deploying with Shinylive."
