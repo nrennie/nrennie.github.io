@@ -79,7 +79,7 @@ The [RoSE Network](https://www.rose-network.org/) (Researchers of Statistics Edu
 
 {{< links-section "/links/rladies.png" >}}
 ### [R-Ladies](https://rladies.org/)
-[R-Ladies](https://rladies.org/) is a global organisation that aims to promote gender diversity in the R community. [Join the Slack workspace](https://rladies-community-slack.herokuapp.com/) to meet other R users. Since September 2023, I've been the organiser of [R-Ladies Lancaster](https://www.meetup.com/rladies-lancaster/).
+[R-Ladies](https://rladies.org/) is a global organisation that aims to promote gender diversity in the R community. [Join the Slack workspace](https://rladies-community-slack.herokuapp.com/) to meet other R users. Since September 2023 I've been the organiser of [R-Ladies Lancaster](https://www.meetup.com/rladies-lancaster/), and since February 2024 I've been part of the [R-Ladies Global Team](https://rladies.org/about-us/global-team/) working on Campaigns.
 {{< /links-section >}}
 
 
