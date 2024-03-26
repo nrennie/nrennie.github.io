@@ -7,11 +7,11 @@ categories:
   - Shiny
   - GitHub
 date: "2024-03-26"
-slug: "Shinylive, GitHub Actions, and R - the magic combination to create an app that updates itself every week. This blog post gives a walk-through of scheduled data collection, building a Shiny app to display it, and deploying with Shinylive."
+slug: "webr-shiny-tidytuesday"
 draft: false
 excerpt: "Shinylive, GitHub Actions, and R - the magic combination to create an app that updates itself every week. This blog post gives a walk-through of scheduled data collection, building a Shiny app to display it, and deploying with Shinylive."
 layout: blog-single
-subtitle: "A Shiny app that autho"
+subtitle: "Shinylive, GitHub Actions, and R - the magic combination to create an app that updates itself every week. This blog post gives a walk-through of scheduled data collection, building a Shiny app to display it, and deploying with Shinylive."
 image: featured.png
 ---
 
@@ -19,7 +19,7 @@ A Shiny app that automatically updates every week without the need to re-deploy 
 
 ## What is #TidyTuesday?
 
-For those of you who don't know, #TidyTuesday is a weekly data challenge aimed at the R community. Every week a new dataset is posted alongside a chart or article related to that dataset, and ask participants explore the data. You can access the data and find out more on [GitHub](https://github.com/rfordatascience/tidytuesday). 
+For those of you who don't know, #TidyTuesday is a weekly data challenge aimed at the R community. Every week a new dataset is posted alongside a chart or article related to that dataset, and participants are asked explore the data. You can access the data and find out more on [GitHub](https://github.com/rfordatascience/tidytuesday). 
 
 Over the past three years or so, I've created around 150 visualisations and I wanted some way of showcasing the work I'd done. Of course, the code and images are available on [GitHub](https://github.com/nrennie/tidytuesday) but it's not the nicest interface for browsing plots. I've also added some to my website, but it only shows the highlights - not hundreds of plots!
 
@@ -33,15 +33,15 @@ What I wanted was:
 
 ## Collecting the data
 
-In order to display every plot I've created, the first thing I needed to do was get a list of all those plots. Luckily, all of the plots and their source code is stored in a nicely structured way on [GitHub](https://github.com/nrennie/tidytuesday).
+To display every plot I've created, the first thing we need to do is get a list of all of those plots. Luckily, all of the plots and their source code is stored in a nicely structured way on [GitHub](https://github.com/nrennie/tidytuesday).
 
 > The blog post I wrote about [Creating template files in R ](https://nrennie.rbind.io/blog/script-templates-r/) and using them for #TidyTuesday code, explains how I enforced a particular structure to keep it consistent over the years. 
 
 In particular, each image is stored in the GitHub repository with a name of the following form `/yyyy/yyyy-mm-dd/yyyymmdd.png`.* In each `yyyy/yyyy-mm-dd` folder there is also an R script titled `yyyymmdd.R` and a `README.md` file. The R for Data Science [GitHub repository](https://github.com/rfordatascience/tidytuesday) that provides the data also uses a date-based structure. Almost all of the meta data that we need for the plot is contained within the structure of the folders and files.
 
-* except 2021 where I had the horrific `dd-mm-yyyy` date format instead of the `yyyy-mm-dd` format that we all know is best.
+*except 2021 where I had the horrific `dd-mm-yyyy` date format instead of the `yyyy-mm-dd` format that we all know is best.
 
-Let's start by getting a list of all the files in the directory where I keep all of my #TidyTuesday plots. I then want to process the names of those folders to extract information about the year and week each folder relates to. I also want to set up some empty columns to store information about the plot title, packages used, URL for the code, and the URL for the original data.
+Let's start by getting a list of all the files in the directory where I keep all of my #TidyTuesday plots. We then want to process the names of those folders to extract information about the year and week each folder relates to. We also want to set up some empty columns to store information about the plot title, packages used, URL for the code, and the URL for the original data.
 
 ```r
 # get list of all #tidytuesday folders
@@ -135,7 +135,9 @@ With a little bit more processing using {dplyr} and {tidyr}, we can convert the 
 # ℹ Use `colnames()` to see all variable names
 ```
 
-We save the output to an Excel file and an `.RData` file. Though we only really need the `.RData` file, the Excel file is a little bit more human readable to help check the output is as we expect (a `.csv` file also works here). 
+We save the output to an Excel file and an `.RData` file. Though we only really need the `.RData` file, the Excel file is a little bit more human readable to help check the output is as we expect.
+
+> If I was building this again, saving a simple `.csv` file would be better, and should work for both reading the file as a human, and later loading into Shiny.
 
 ```r
 # save file
@@ -230,6 +232,8 @@ all_titles <- all_weeks$title
 all_pkgs <- dplyr::select(all_weeks, -c(year, week, title, pkgs, code_fpath, img_fpath))
 all_pkgs <- colnames(all_pkgs)
 ```
+
+> The way we've loaded in the data might seem like a bit of an odd choice (using `load()` and `url()`). This is related to the way the app will be deployed - more on that later!
 
 We'll use the `all_titles` variable as the options for a dropdown menu that a user can use to choose which plot to display. The `all_pkgs` variable will provide options for radio buttons that a user can use to filter plots that use a specific package.
 
