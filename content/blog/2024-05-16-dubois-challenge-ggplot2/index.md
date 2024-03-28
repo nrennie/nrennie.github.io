@@ -1,20 +1,16 @@
 ---
-title: "DuBois Challenge"
-subtitle: ""
-excerpt: "The Du Bois Challenge is part of a celebration of the data visualization legacy of W.E.B Du Bois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools."
-date: 2023-01-30
-author: "Nicola Rennie"
-draft: false
+title: "DuBois Challenge in {ggplot2}"
+author: Nicola Rennie
 categories:
-  - Data visualisation
-layout: single
+  - R
+  - Data Visualisation
+date: "2024-05-16"
+slug: "dubois-challenge-ggplot2"
+draft: false
+excerpt: "The Du Bois Challenge is part of a celebration of the data visualization legacy of W.E.B Du Bois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools."
+subtitle: "The Du Bois Challenge is part of a celebration of the data visualization legacy of W.E.B Du Bois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools."
+layout: blog-single
 image: featured.jpg
-hidden: true
-links:
-- icon: github
-  icon_pack: fab
-  name: code
-  url: https://github.com/nrennie/dubois_challenge
 ---
 
 The Du Bois Challenge is part of a celebration of the data visualization legacy of W.E.B Du Bois which attempts to recreate the visualizations from the 1900 Paris Exposition using modern tools. Check out the challenge [here](https://github.com/ajstarks/dubois-data-portraits/blob/master/challenge/README.md). Born in 1868, William Edward Burghardt Du Bois was an activist, author, and scholar, being the first African-American to receive a doctorate from Harvard University. In addition, his approach to data visualisations was incredibly innovative, both in terms of his stylistic methods and in his use of using visualisations to build data-driven arguments. 
@@ -173,4 +169,4 @@ Below are my contributions to the 2021 Du Bois Challenge, with my reproduction o
 <img src="2021/original_10.jpg?raw=true" width="49%">
 </p>
 
-
+Code: [https://github.com/nrennie/dubois_challenge](https://github.com/nrennie/dubois_challenge)
