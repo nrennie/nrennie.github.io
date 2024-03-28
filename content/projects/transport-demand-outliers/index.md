@@ -25,6 +25,10 @@ It's important to detect changes in demand for multiple reasons. Transport compa
 
 At the moment, many transport companies employ analysts to monitor the number of bookings. However, as human beings, we're not very good at spotting things by eye, and we tend to see patterns that don't exist. This research develops a statistical method to identify demand outliers and send alerts to analysts.
 
+<hr>
+
+## Statistical methodology for detecting outliers
+
 ### So, how do we find the outliers?
 
 Most transport providers store information about bookings as a time series. For example, for train ABC departing on January 31 at 10:00, there is a series of observations of how many passengers had booked tickets by 3 months per departure, 1 month before departure, 1 week before departure ... You get the idea. 
@@ -40,6 +44,10 @@ So for a set of departures, we would have a collection of time series that might
 To detect outliers within this set of time series, we use *functional analysis*. Functional analysis treats each time series of bookings as an observation of a continuous function. We calculate the *functional depth* of the time series of bookings for each train. I won’t go into all of the details about the equations for calculating the functional depth because they’re not very nice. But generally, depth measures provide us with an ordering of the time series -- where the time series closest to the centre i.e., the median, has the highest depth, and that in the tails of the distribution i.e. outliers, have low depth. This allows to consider both changes in magnitude (e.g. a big increase in bookings), and shape of booking patterns (e.g. passengers booking earlier than normal). Outliers are detected by setting a threshold for the functional depth. Any time series with a functional depth below that threshold is classified as an outlier.
 
 Of course, we don't just want to identify demand outliers in historic data (although this can still be beneficial on its own). We want to identify these outliers as they are happening, so that an analyst can make an adjustment. We found that forecasting the bookings still to come in, and performing the outlier detection on the forecasted bookings, helped us to identify the outliers earlier. 
+
+<hr>
+
+## Statistical methodology for the transport network setting
 
 ### Thinking about transport systems
 
@@ -63,6 +71,10 @@ If we are able to identify and predict when unusual demand patterns occur, bike-
 
 Overall, a key finding of this research is that functional data analysis is a very powerful tool for identifying demand outliers. However, features of the data such as network effects or seasonal patterns need to be taken into account first. More research into how an outlier-based alert system could be implemented in an automated way is still needed.
 
+## Shiny app
+
+<hr>
+
 ## Related publications
 
 **Outlier detection in network revenue management.** <br>
@@ -79,8 +91,5 @@ Overall, a key finding of this research is that functional data analysis is a ve
 
 ## Related blog posts
 
-* [Detecting demand outliers in transport systems](https://nrennie.rbind.io/blog/detecting-demand-outliers-in-transport-systems/)
+[Detecting demand outliers in transport systems](https://nrennie.rbind.io/blog/detecting-demand-outliers-in-transport-systems/)
 
-## Collaborators
-
-Catherine Cleophas; Adam M. Sykulski; Florian Dost; Phillip Bartke; Valentin Wagner.
