@@ -15,7 +15,7 @@ image: featured.png
 
 A couple of months ago I read a [blog post](https://charts.substack.com/p/typewriter-chartography) by RJ Andrews, in which he described the process of making a map of California using a typewriter. It's a beautiful map - made using over 2,500 keystrokes, all done by hand. The density of ink for each letter displays the elevation. He notes that he's not the first to make maps using a typewriter. I started to wonder whether I could create a map with a *typewriter feel* using only {ggplot2}? By the end of this blog post, you should have the answer to that question. Although you can probably guess the answer already...
 
-### Elevation data
+## Elevation data
 
 Before we get started with making maps, we need some data. Specifically, some elevation data. There are multiple ways you can get elevation data into R. I decided to start with a UK shapefile that I already had from some of the [#30DayMapChallenge](https://github.com/nrennie/30DayMapChallenge) maps I made last year. t was originally downloaded from [geoportal.statistics.gov.uk](https://geoportal.statistics.gov.uk/datasets/ons::countries-december-2021-uk-buc/explore?location=55.216238%2C-3.316413%2C6.38). Other methods for storing and reading geographic data into R are available - you can read about some of them in my R packages for visualising spatial data [blog post](https://nrennie.rbind.io/blog/2022-12-17-r-packages-for-visualising-spatial-data/). We can read the shapefile into R using `st_read()` from {sf}. I also filtered the data to only keep the map of Scotland using `filter()` from {dplyr}:
 
@@ -36,7 +36,7 @@ elev_data <- elevatr::get_elev_raster(locations = scot_sf,
 
 > Note that there are some changes planned for `get_elev_raster()` soon due to the changes in spatial packages in R. I'll try to keep the code in this blog post updated to reflect those changes but please refer to the package documentation for the most up to date functions.
 
-### Choosing a font
+## Choosing a font
 
 Raster elevation maps are often plotted as a heatmap - where the colour of each grid square represents the elevation, and the colours are taken from a continuous gradient. Instead of doing that, we're going to print a letter in each grid square, where the letters represent the elevation. That leaves us with a key question - which letters should we use?
 
@@ -55,7 +55,7 @@ To decide which letters to use, I found it easiest to first view how each letter
 
 I eventually decided to use the letters lower case `l`, upper case `I`, `H`, and `M` to denote four different elevation levels (from lowest to highest). When you look at how the characters are printed, `M` uses a lot of ink, whereas `l` uses very little. In practice there's little difference between lower case `l` and upper case `I` in Special Elite font, so three characters may have been enough. 
 
-### Processing the data
+## Processing the data
 
 Now we need to do some pre-processing of our elevation data before we plot it. We need to (i) convert it into four discrete elevation intervals, and (ii) assign a letter to each of those intervals.
 
@@ -116,7 +116,7 @@ The first five rows of `elev_plot` look like this:
 
 (lots of missing values to be expected as the first rows relate to a corner of the area which is in the sea...)
 
-### Making the map
+## Making the map
 
 Now it's map time! The basic map is fairly easy to make - we only need to use `geom_text()`! We map the `x` and `y` values in the `elev_plot` data to the x and y axes and specify that the `value_letter` should be used as the label inside the `aes()` call. We also need to remember to use the `family` argument to apply our chosen font - previously loaded in as `"elite"`:
 
@@ -188,7 +188,7 @@ You can then add a caption with your social media handles if you choose to. My [
 </p>
 
 
-### Additional resources
+## Additional resources
 
 I'd recommend creating a function that wraps most of the code we have above. The function can take the initial map (e.g. shapefile) as an input, and can have additional arguments that specify the plot background colour, text colour, and size, for example. Writing a function made it possible to create this typewriter-styled map of England in one line:
 

@@ -8,7 +8,9 @@ date: "2022-12-17"
 draft: false
 excerpt: "Throughout the #30DayChartChallenge I made most of my maps with R. This blog post details the R packages I find myself using most often when visualising spatial data."
 layout: blog-single
-slug: "2022-12-17-r-packages-for-visualising-spatial-data"
+slug: "r-packages-for-visualising-spatial-data"
+aliases:
+- /blog/2022-12-17-r-packages-for-visualising-spatial-data
 subtitle: "Throughout the #30DayChartChallenge I made most of my maps with R. This blog post details the R packages I find myself using most often when visualising spatial data."
 title: "R packages for visualising spatial data"
 image: featured.png

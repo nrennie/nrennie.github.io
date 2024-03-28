@@ -20,13 +20,13 @@ Back in April 2022, I participated in the [#30DayChartChallenge](https://twitter
 
 The reactions were pretty positive, and the suggestions from [Twitter](https://twitter.com/wouldeye125/status/1534181236737966085) that it should become its own R package have been floating around in my mind since then. So here it is! {ggflowchart} - the package for creating simple flowcharts using {ggplot2}.
 
-### What does {ggflowchart} do?
+## What does {ggflowchart} do?
 
 Flowcharts can be a useful way to visualise complex processes. However, I couldn't find an easy way to create a flowchart in R. There are a few packages for either drawing basic components of flowcharts (like {grid}), packages that are great for visualising complex network data where order doesn't really matter (like {ggnetwork} and {igraph}), but none of them gave me the control over customisation I was used to with {ggplot2}. 
 
 {ggflowchart} tries to fill that gap. The aim of {ggflowchart} is to help R users make simple, good-looking flowcharts, with as little code as possible. It computes a layout, then uses existing {ggplot2} functions to stitch together rectangles, text, and arrows. 
 
-### Installing {ggflowchart}
+## Installing {ggflowchart}
 
 As of 11 May 2023, {ggflowchart} is officially available on CRAN. You can install {ggflowchart} using `install.packages("ggflowchart")`.
 
@@ -44,7 +44,7 @@ At the moment, {ggflowchart} has reasonably few dependencies (most of them commo
 * tibble, 
 * tidyr
 
-### A few examples
+## A few examples
 
 To show you how {ggflowchart} actually works, let's go through a couple of small examples. The examples explained here are also included in the [vignettes](https://nrennie.github.io/ggflowchart/articles/) for future reference.
 
@@ -114,7 +114,7 @@ The column names to colour by can be either quoted or unquoted, e.g. `ggflowchar
 
 A more complex example showing how to change the layout using `scale_x_reverse()`, add titles, change the background colour, and edit the labels is included in another [vignette](https://nrennie.github.io/ggflowchart/articles/decision-tree-example.html).
 
-### What's coming next?
+## What's coming next?
 
 {ggflowchart} is currently a work in progress, and there are already a few things on my list to add into the next release! Upcoming features will include:
 
@@ -137,7 +137,7 @@ ggflowchart(data)
 
 These features are currently listed as issues on GitHub, and I will slowly work my way through them. If you have other suggestions for new features, or if you find a bug, please create an issue in the [GitHub repository](https://github.com/nrennie/ggflowchart/issues).
 
-### The most important part...
+## The most important part...
 
 Of course, the most important part of any R package is the hex sticker! As a nod to the *Goldilocks Decision Tree* flowchart that inspired the package in the first place, the hex sticker for {ggflowchart} features three bears!
 

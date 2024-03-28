@@ -7,19 +7,23 @@ date: "2022-04-21"
 draft: false
 excerpt: "{gt} is an R package designed to make it easy to make good looking tables. This blog post demonstrates how to add plots as a column in a {gt} table."
 layout: blog-single
-slug: "2022-04-21-getting-started-with-gt-tables"
+slug: "getting-started-with-gt-tables"
+aliases:
+- /blog/2022-04-21-getting-started-with-gt-tables
 subtitle: "{gt} is an R package designed to make it easy to make good looking tables. This blog post demonstrates how to add plots as a column in a {gt} table."
 title: "Getting started with {gt} tables"
 image: featured.png
 ---
 
-### What is {gt}?
+## What is {gt}?
 
 {gt} is an R package designed to make it easy to make good looking tables. My favourite feature of the {gt} package, is the ability to combine plots and tables. I've definitely spent time in the past deciding whether data would better presented in a table or in a plot, but {gt} allows me to combine them.
 
 I recently found some time to explore {gt} and make a table which combines textual data with plots, to visualise the most spoken languages in the world. This blog post will demonstrate how to create a basic {gt} tables, adding plots as a column, and editing the look of the table. All code used in this post is available in this [GitHub repository](https://github.com/nrennie/gt_tables/tree/main/Languages). 
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">Finally got around to playing with the {gt} package for the first time this week, following this tutorial from <a href="https://twitter.com/BjnNowak?ref_src=twsrc%5Etfw">@BjnNowak</a>! Tested it using a <a href="https://twitter.com/DiversityinData?ref_src=twsrc%5Etfw">@DiversityinData</a> dataset on the most spoken languages in the world 🌍<br><br>Code: <a href="https://t.co/NKwxVydkzi">https://t.co/NKwxVydkzi</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataViz?src=hash&amp;ref_src=twsrc%5Etfw">#DataViz</a> <a href="https://twitter.com/hashtag/DataVisualization?src=hash&amp;ref_src=twsrc%5Etfw">#DataVisualization</a> <a href="https://t.co/Co6KojMPn0">https://t.co/Co6KojMPn0</a> <a href="https://t.co/JknX7JhZMY">pic.twitter.com/JknX7JhZMY</a></p>&mdash; Nicola Rennie (@nrennie35) <a href="https://twitter.com/nrennie35/status/1504801290894954503?ref_src=twsrc%5Etfw">March 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
 This blog post assumes you have some basic knowledge of {tidyverse} packages - mainly {dplyr} and `%>%`, the pipe operator. Although it will demonstrate the data wrangling process, it is not the focus of the blog post. We'll be using multiple packages from the {tidyverse}, along with {readxl} to read in the data, {purrr} to create multiple plots, and of course {gt}. 
 
@@ -30,7 +34,7 @@ library(gt)
 library(purrr)
 ```
 
-### Data
+## Data
 
 The dataset used in this blog post comes from [Diversity in Data](https://twitter.com/DiversityinData) and can be downloaded [here](https://data.world/diversityindata/diversityindata-the-countdown-to-christmas-and-new-year). 
 
@@ -43,7 +47,7 @@ df <- tibble(read_xlsx("100 Most Spoken Languages.xlsx")) %>%
     slice_head(n = 10)
 ```
 
-### Data Wrangling
+## Data Wrangling
 
 To create a table using {gt}, we first need to create a tibble (or data frame) where each column in the tibble will become a column of our table. So before we begin wrangling our data, we need to think about what columns we want our final table to contain. 
 
@@ -90,7 +94,7 @@ df <- df %>%
 
 ```
 
-### Adding plots to tables
+## Adding plots to tables
 
 In order to add a column of plots to the table, we need to:
 
@@ -157,7 +161,7 @@ df <- df %>%
   select(Rank, Language, description, plots)
 ```
 
-### Making a {gt} table
+## Making a {gt} table
 
 We now have out input ready to make a table using {gt}. Unfortunately, because our table contains plots, we can't simply pipe in the tibble to the `gt()` function. If you try it, you'll see that the **plot** column contains code, rather than a plot. 
 
@@ -190,12 +194,12 @@ tb <- tb %>%
 This results in the table shown below. 
 
 <p align="center">
-<img src="table1.png?raw=true">
+<img src="table1.png" alt="Basic looking table">
 </p>
 
 All the key components we need are there, but we may want to add some styling to improve the finished look.
 
-### Styling tables
+## Styling tables
 
 There are a lots of different ways to style {gt} tables, so we'll just highlight a few here:
 
@@ -312,11 +316,10 @@ tb <- tb %>%
 The final table now looks a little more polished.
 
 <p align="center">
-<img src="languages.png?raw=true">
+<img src="languages.png" alt="Better looking table">
 </p>
 
-
-### Saving your {gt} table
+## Saving your {gt} table
 
 If you're using RStudio you'll notice that {gt} tables are previewed in the *Viewer* pane, rather than the *Plots* pane, so you can't just use the *Export* button. However, the {gt} package does have the `gtsave()` function which you can use to save a static version of your plot.
 
@@ -325,7 +328,7 @@ gtsave(tb,"languages.png")
 ```
 Alternatively, you can use Rmarkdown to output to HTML, or PDF documents, for example.
 
-### Final thoughts
+## Final thoughts
 
 These are just a couple of the things you can do with {gt}. Hopefully, it's inspired you to explore what it can do. If you want to recreate this table for yourself, the data can be downloaded [here](https://data.world/diversityindata/diversityindata-the-countdown-to-christmas-and-new-year) and the code is available on [GitHub](https://github.com/nrennie/gt_tables/tree/main/Languages).
 

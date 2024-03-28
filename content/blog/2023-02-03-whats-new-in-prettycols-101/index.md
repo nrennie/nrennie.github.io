@@ -28,7 +28,7 @@ You can also install the development version from [GitHub](https://github.com/nr
 remotes::install_github("nrennie/PrettyCols")
 ```
 
-### More palettes!
+## More palettes!
 
 The new release contains twelve additional palettes, including two new sequential palettes (`Yellows` and `Reds`), two new diverging palettes (`PurpleYellows` and `RedBlues`), and eight new qualitative palettes. You can see the complete list of available palettes by running `view_all_palettes()`:
 
@@ -38,7 +38,7 @@ The new release contains twelve additional palettes, including two new sequentia
 
 or browsing the [package vignette](https://nrennie.github.io/PrettyCols/articles/available-palettes.html) on available palettes.
 
-### Colourblind friendly palettes
+## Colourblind friendly palettes
 
 ```r
 PrettyCols::view_all_palettes(colourblind_friendly = TRUE)
@@ -67,7 +67,7 @@ PrettyCols::view_all_palettes(type = c("seq", "div"))
 
 The colourblind-friendliness has been checked using `colorblindcheck::palette_check()`, and a judgement made based on the number of distinct colour pairs with deuteranopia, protanopia, tritanopia in comparison to full colour vision. This judgement may not always be correct, and if you think a colour palette has been listed as colourblind friendly in error, please raise a [GitHub issue](https://github.com/nrennie/PrettyCols/issues) and I'll re-classify the palette.
 
-### Python support
+## Python support
 
 > *Edit: As of August 2023, Python support has moved to a separate package. See [github.com/nrennie/PrettyPyCols](https://github.com/nrennie/PrettyPyCols).*
 

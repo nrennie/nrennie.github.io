@@ -7,7 +7,9 @@ date: "2022-07-18"
 draft: false
 excerpt: "This tutorial blog will walk through the process of getting data from Strava using {rStrava}, making a map of it, and animating the map with {gganimate}."
 layout: blog-single
-slug: "2022-07-18-mapping-a-marathon-with-rstrava"
+slug: "mapping-a-marathon-with-rstrava"
+aliases:
+- /blog/2022-07-18-mapping-a-marathon-with-rstrava
 subtitle: "This tutorial blog will walk through the process of getting data from Strava using {rStrava}, making a map of it, and animating the map with {gganimate}."
 title: "Mapping a marathon with {rStrava}"
 image: featured.png
@@ -15,13 +17,16 @@ image: featured.png
 
 After a long run in the Forest of Bowland when visiting Lancaster for a few days, I decided to try out the {rStrava} package to make some maps of where I'd been. This tutorial blog will walk through the process of getting the data from Strava, making the map, and animating it with {gganimate}.
 
-<blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">Last week&#39;s route mapped out in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> using {rStrava} and {gganimate}🏃‍♀️🏃‍♀️🏃‍♀️ <a href="https://t.co/O510G8E6hr">https://t.co/O510G8E6hr</a> <a href="https://t.co/WgUAFV6eFA">pic.twitter.com/WgUAFV6eFA</a></p>&mdash; Nicola Rennie (@nrennie35) <a href="https://twitter.com/nrennie35/status/1547988431627726850?ref_src=twsrc%5Etfw">July 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p align="center">
+<img src="twitter.png" alt="Twitter screenshot" width="60%">
+</p>
 
-### What is {rStrava}?
+## What is {rStrava}?
 
 [Strava](https://www.strava.com/) is a an app for tracking physical activities, mostly used for running and cycling. The [{rStrava}](https://github.com/fawda123/rStrava) package lets you access data through the Strava API. 
 
 Since {rStrava} is available on CRAN, you can install it in the usual way using:
+
 
 ```r
 install.packages("rStrava")
@@ -34,12 +39,12 @@ help.search('notoken', package = 'rStrava')
 ```
 However, if you want detailed data on your activities or if your profile is private (like mine) you need an authentication token to get the data into R. To get an authentication token you do need a Strava account of your own. The instructions on the [{rStrava} README](https://github.com/fawda123/rStrava) are pretty easy to follow to set up your authentication token. 
 
-### Setting up an authentication token
+## Setting up an authentication token
 
 On the Strava website, in the settings, you can [make an API application](https://www.strava.com/settings/api). There are three pieces of information you need to fill out: 
 
 <p align="center">
-<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/strava_api.png?raw=true">
+<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/strava_api.png?raw=true" alt="strava api screenshot">
 </p>
 
 * **Application Name**: the name of your app (this can be almost anything). I used the blog title.
@@ -58,8 +63,7 @@ strava_token <- httr::config(token = strava_oauth(app_name,
 ```
 The `app_name` is the name you gave to the app when making your token on the Strava website. The `app_client_id` and `app_secret` were generated after you clicked "Create" on the Strava website, and you can simply pass these in. You will also perhaps want to change the `app_scope` argument. By default, this is set to `"public"`, but you may want to get information on your activities which are not public. You can save the token as a variable, to pass into the {rStrava} functions. I've called it `strava_token`.
 
-
-### Reading in the data
+## Reading in the data
 
 With the authentication token set you can now begin to get data into R, directly from the Strava API. First of all, I grabbed the data on my activities using the `get_activity_list()` function, for which I need to pass in my Strava token. I then use the `get_activity_streams()` function to get detailed information on a specific activity. Here the `id` is the activity id i.e., the number that comes at the end of the URL string for the activity: `https://www.strava.com/activities/{id}.` 
 
@@ -89,7 +93,7 @@ There are some nice built-in mapping functions in {rStrava} that I recommend che
 write.csv(strava_data, "strava_data.csv", row.names = F)
 ```
 
-### Data wrangling
+## Data wrangling
 
 The data the comes out of the `get_activity_streams()` function is already very clean, so the data wrangling for this example is very minimal. In fact, I only used two functions, neither of which was really necessary. I converted the data frame to a tibble using `as_tibble()` because I prefer working with tibbles. Since all the data is for a single activity in this case, the `id` column is a bit redundant so I also used `select()` from {dplyr} to remove the `id` column. 
 
@@ -100,7 +104,7 @@ strava_data %>%
   select(-id)
 ```
 
-### Background maps
+## Background maps
 
 Now it's finally time to start building a map! Here, I loaded the rest of the R packages I'll be using for mapping and animating.
 
@@ -145,10 +149,10 @@ ggmap(bg_map)
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/bg_map.png?raw=true">
+<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/bg_map.png?raw=true" alt="simple map">
 </p>
 
-### Overlaying the activity data
+## Overlaying the activity data
 
 I'm simply going to use {ggplot2} to overlay the data in `strava_data` on top of my background map. Using {ggplot2}, there are (at least) two different ways we could add the data: either using `geom_point()` or `geom_sf()`. We'll start with `geom_point()`. 
 
@@ -181,13 +185,14 @@ g <- ggmap(bg_map) +
              size = 1) 
 g
 ```
+
 The maps returned using `geom_point()` and `geom_sf()` are essentially the same in this case.
 
 <p align="center">
-<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/initial.png?raw=true">
+<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/initial.png?raw=true" alt="simple map with activity overlay">
 </p>
 
-### Styling the map
+## Styling the map
 
 The initial map looks okay, but we can add some styling to make it look better. I'm a big fan of {rcartocolor} for colour palettes. I can get the hex codes of the `"SunsetDark"` palette, and use the same hex codes for the title font later. 
 
@@ -211,10 +216,10 @@ g
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/final.png?raw=true">
+<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/final.png?raw=true" alt="styled map">
 </p>
 
-### Animating with {gganimate}
+## Animating with {gganimate}
 
 I was pretty happy with the final static image, but why not animate it? {gganimate} makes it really easy to animate ggplot objects. For this example, I'd strongly recommend using the `geom_point()` version of the map. 
 
@@ -246,6 +251,7 @@ g = g +
   transition_time(time = time) +
   shadow_mark()
 ```
+
 The `animate()` function then actually builds the animation. Usually `renderer = gifski_renderer()` should be the default, but I kept getting individual images instead of a gif unless I specified it manually - to investigate later. Here, I also specified the width and height (using a little bit of trial and error to avoid white space caused by the fixed ratio from `ggmap()`). `anim_save()` then saves the gif to a file (analogously to `ggsave()` from {ggplot2}).
 
 ```r
@@ -254,7 +260,7 @@ anim_save("mapping_marathon.gif")
 ```
 
 <p align="center">
-<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/mapping_marathon.gif?raw=true">
+<img width = "80%" src="/blog/2022-07-18-mapping-a-marathon-with-rstrava/mapping_marathon.gif?raw=true" alt="gif of run over time">
 </p>
 
 And that's it! You now have an animated map of your Strava recorded run (or cycle, or walk, or ...)! If you want to create a map of your own, you can find the R code used in this blog on [my website](/blog/2022-07-18-mapping-a-marathon-with-rstrava/mapping_marathon.R). Thanks very much to the creators of [{rStrava}](https://github.com/fawda123/rStrava) for such an easy to use package!
