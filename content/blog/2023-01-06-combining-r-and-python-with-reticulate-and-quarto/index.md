@@ -17,7 +17,7 @@ math: true
 
 The R versus Python debate has been going on for as long as both languages have existed. I'm not one to takes sides - I think you need to use the best tool for the job. Sometimes R will be better. Sometimes Python will be better. But what happens if you need both languages in the same workflow? Do you need to choose? No, is the simple answer. You can use both. This blog post will show you how you can combine R and Python code in the same analysis using {reticulate} and output the results using Quarto.
 
-### What is Quarto?
+## What is Quarto?
 
 [Quarto](https://quarto.org/) is an open-source scientific and technical publishing system that lets you combine narrative text with code to create reproducible and elegantly formatted output. If you're familiar with R Markdown, Quarto might sound somewhat similar - you can think of Quarto as next generation of R Markdown. The great thing about Quarto is that it doesn't just support code written in R - it supports other languages, including Python!
 
@@ -55,7 +55,7 @@ format: pdf
 ---
 ```
 
-### What is {reticulate}?
+## What is {reticulate}?
 
 The [{reticulate} R package](https://rstudio.github.io/reticulate/) provides an interface between R and Python which allows you to call Python code within R and translate between R and Python objects.
 
@@ -65,7 +65,7 @@ The [{reticulate} R package](https://rstudio.github.io/reticulate/) provides an 
 
 Using {reticulate} means that your Python code can access objects created in R, and vice versa. It means you can include Python code within an R package. It means you can run Python code in the RStudio IDE console. 
 
-### Using R and Python together
+## Using R and Python together
 
 So let's see an example of how we can use R and Python within the same analysis workflow. We're going to read in a data set using R, fit a linear model in Python, then plot the residuals using {ggplot2} in R (and output our analysis as a set of slides).
 
@@ -171,7 +171,7 @@ Here, we used `py$` to import our data and specify that we want to use `lemur_da
 
 Our residuals look okay - they're not great. It looks like there's still some unaccounted-for trend for lemurs with smaller predicted weights. Maybe they're not growing at a linear rate. It also looks like there is an increase in variation for lemurs with large predicted weights. It would be useful to go back and try a few other models here to see what happens, but we'll leave that for another day...
 
-### How does it work?
+## How does it work?
 
 There are a couple of elements to the code that means R and Python *just works* together. Since the document starts with an R code block, the engine used to render the document will be knitr. The rest of this blog post assumes we're using a knitr engine, so if you've specified a Jupyter engine instead, this method won't work. The [Quarto documentation](https://quarto.org/docs/computations/execution-options.html#engine-binding) gives a bit more detail on how the engine is chosen. Note that these examples also work with R Markdown (not just Quarto) - although the YAML and code block options will need to be changed. 
 
@@ -179,7 +179,7 @@ Normally, if you're rendering a Quarto document that contains only Python code b
 
 In the final R code block, we do something sort of similar to `py$lemur_data_py`. Here, we use `py$` to specify that we want to use `lemur_data_py` from the Python code block. You'll notice that we also need to explicitly call `library(reticulate)` for this to work (or use `reticulate::py`) - since it's an R code block, {knitr} doesn't know that it needs to use {reticulate} without us telling it to.
 
-### The final output
+## The final output
 
 Let's see what our slides containing the code, table, and plot look like...
 
@@ -279,7 +279,7 @@ ggplot(data = lemur_residuals,
 
 You can download the .qmd file from my [website](example.qmd).
 
-### Additional resources
+## Additional resources
 
 You can use {reticulate} outside of Quarto (and R Markdown) documents, including to run Python code from the console in RStudio. If you want to read more about what {reticulate} can do, the [package website](https://rstudio.github.io/reticulate/) has a lot of nice examples and guidance.
 

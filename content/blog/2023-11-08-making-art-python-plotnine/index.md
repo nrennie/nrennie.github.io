@@ -45,7 +45,7 @@ s=1234
 
 Here, `n_x` is the number of vertical lines; `max_y` is the maximum height of the vertical lines; `size` is the size of the points; `linewidth` is the width of the vertical lines; `bg_col` is the background colour; `col_palette` is a list of hex colours that we'll use to colour the lines and points; and `s` is the random seed to make sure we can reproduce our art twice!
 
-### The mathematics of art
+## The mathematics of art
 
 When I first started making generative art, I quickly realised there was a lot more maths involved than I initially thought. Generally we have a combination of *rules* and *randomness*. In this art piece these take the following forms:
 
@@ -94,7 +94,7 @@ cmap=mcolors.LinearSegmentedColormap.from_list('custom_cmap', col_palette, N=len
 plot_data['col']=[mcolors.to_hex(cmap(i)) for i in range(len(plot_data.index))]
 ```
 
-### Visualisation with plotnine
+## Visualisation with plotnine
 
 The [`plotnine` library](https://plotnine.readthedocs.io/en/) is a Python implementation of a *grammar of graphics* based on the {ggplot2} R package. It allows you to create plots by mapping variables in a dataframe to the visual aspects that make up the plot. 
 
@@ -137,7 +137,7 @@ The grey background and axis lines also aren't very useful in the context of art
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-11-08-making-art-python-plotnine/featured.png" width = "60%" alt="Navy blue generative art with light blue and brown lines and points">
 </p>
 
-### Building a function
+## Building a function
 
 We can create multiple different versions of our art by varying the different parameters. It's much easier to do this if we create a function first:
 
@@ -196,7 +196,7 @@ art(n_x=300, max_y=20, size=0.001, linewidth=0.1, bg_col="#FAE3E3", col_palette=
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-11-08-making-art-python-plotnine/art2.png" width = "60%" alt="Light cream generative art with peach and pink lines and points">
 </p>
 
-### Other resources
+## Other resources
 
 * The [`plotnine` documentation](https://plotnine.readthedocs.io/) provides instructions for creating plots using `plotnine` and there are plenty of examples in the Gallery section.
 

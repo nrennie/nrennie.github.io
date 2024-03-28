@@ -7,7 +7,9 @@ date: "2022-11-14"
 draft: false
 excerpt: "Let's say you need to understand how your data changes within a day, and between different days. Functional analysis is one approach of doing just that so here's how I applied functional analysis to some air pollution data using R!"
 layout: blog-single
-slug: 2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r
+slug: using-functional-analysis-to-model-air-pollution-data-in-r
+aliases:
+- /blog/2022-11-14-using-functional-analysis-to-model-air-pollution-data-in-r
 subtitle: "Let's say you need to understand how your data changes within a day, and between different days. Functional analysis is one approach of doing just that so here's how I applied functional analysis to some air pollution data using R!"
 title: "Using functional analysis to model air pollution data in R"
 image: featured.png
@@ -16,7 +18,7 @@ math: true
 
 Let's say you need to understand how your data changes within a day, and between different days. For example, if you have hourly pollution data that follows a regular pattern throughout a day, but follows different patterns on a Wednesday and Saturday. Functional analysis is one approach of doing just that. During my PhD, I developed methods based on functional analysis to identify outlier demand in booking patterns for trains in railway networks. To demonstrate that those statistical methods are also applicable in other areas, I started to analyse air pollution data across the United Kingdom. This blog post will discuss the idea of using functional analysis to model air pollution data with the aim of identifying abnormal pollution days. 
 
-### Introducing the data
+## Introducing the data
 
 The data comes from DEFRA's (Department for Environment, Food and Rural Affairs) Automatic Urban and Rural Network (AURN), which reports the level of nitrogen dioxide (among other pollutants) in the air every hour at 164 different locations. For this analysis, we considered data recorded between November 6, 2018 to November 6, 2022.
 
@@ -36,7 +38,7 @@ pollution <- read_csv("air_pollution.csv", skip = 3)
 ```
 {{< /detail-tag >}}
 
-### Data wrangling
+## Data wrangling
 
 It's often said that 80% of data science is cleaning data, and this analysis was no exception. The data initially looked a little bit like this:
 
@@ -136,7 +138,7 @@ Aberdeen_WR <- Aberdeen_WR %>%
 ```
 {{< /detail-tag >}}
 
-### Functional approaches to modelling
+## Functional approaches to modelling
 
 Now that we've tidied up the data and dealt with the missing values, it's time to get stuck into the modelling process! First of all, let's have another look at our data but in a slightly different way:
 
@@ -291,7 +293,7 @@ ggplot(data = Aberdeen_residuals_tbl,
 ```
 {{< /detail-tag >}}
 
-### Finding outliers in the data
+## Finding outliers in the data
 
 To describe how normal (or abnormal) the (residual) pollution pattern for each day is, we calculate the functional depth. A depth measurement attributes a sensible ordering to observations, such that observations which are close to average have higher depth and those far from the average have lower depth. Days which have very low depth can be classified as outliers. Functional depth takes into account the abnormality both in the magnitude (for example, overall higher pollution levels throughout the day), and shape (for example, pollution levels peak earlier in the day than normal) of the pollution pattern.
 

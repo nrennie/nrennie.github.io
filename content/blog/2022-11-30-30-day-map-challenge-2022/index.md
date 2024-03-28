@@ -9,7 +9,9 @@ date: "2022-11-30"
 draft: false
 excerpt: "The #30DayMapChallenge is a month-long mapping, cartography, and data visualization challenge aimed at the spatial community. Here are the things I've learnt from participating in the challenge for a second time."
 layout: blog-single
-slug: 2022-11-30-30-day-map-challenge-2022
+slug: 30-day-map-challenge-2022
+aliases:
+- /blog/2022-11-30-30-day-map-challenge-2022
 subtitle: "The #30DayMapChallenge is a month-long mapping, cartography, and data visualization challenge aimed at the spatial community. Here are the things I've learnt from participating in the challenge for a second time."
 image: featured.png
 ---
@@ -31,7 +33,7 @@ A few things that I found helpful with making maps within a 15 minute time limit
 * Using R packages for data or built-in data sources, reduces time spent data wrangling since the data is more likely to be in a format you can already use;
 * Appreciating a minimalist style. makes the goals more achievable.
 
-### R packages I used for the first time
+## R packages I used for the first time
 
 Most of the maps I created during the challenge were made using R and, due to the time limit I set myself, I often found myself reaching for packages I was already familiar with. However, I did manage to try out a few new packages (and some new functions from packages I'd used before)! Here are a few of the highlights:
 
@@ -50,7 +52,7 @@ Most of the maps I created during the challenge were made using R and, due to th
 
 * `mapshot()` from {mapview}: allows you to save an interactive {leaflet} map as a static image (for example as a PNG). {leaflet} is perfect for creating interactive maps but if you need a static screenshot of your map (for example to share it on social media), then `mapshot()` is incredibly useful - no more using *Print Screen*!
 
-### Comparing R and Python
+## Comparing R and Python
 
 For the *out of my comfort zone* theme on day 29, I decided to start recreating my map from day 2 in Python instead of R. I have some experience of programming in Python but I haven't done much plotting or mapping in Python (at least not for a very long time)! 
 
@@ -113,7 +115,7 @@ plt.show()
 ```
 {{< /detail-tag >}}
 
-### My favourite map
+## My favourite map
 
 The map that I enjoyed the most, was this minimalist version of the Glasgow subway for the "network" theme. My initial idea for this map was to recreate the Glasgow subway logo which has a very simplified version of the subway as the main image. I obtained the data from OpenStreetMap using the {osmdata} package, and the data turned out to be a little bit more complicated than I expected: it gave me some extra parts of the subway tracks I wasn't expecting, the river polygons split in different places, and the stations data was different from the station entrances data. Lots of small issues that meant the data wrangling took up a little bit more time.
 
@@ -128,7 +130,7 @@ I ended up spending a bit more time on this, and finishing it off. You can also 
 <img src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2022-11-30-30-day-map-challenge-2022/subway.gif" width = "44.7%">
 </p>
 
-### Resources 
+## Resources 
 
 The [Geocomputation with R](https://geocompr.robinlovelace.net/) book is an excellent reference for getting started in working with spatial data in R - and it's freely available online!
 
@@ -136,6 +138,6 @@ The R package I use most often for manipulating and visualising spatial data is 
 
 Look out for another blog post coming soon, where I'll discuss my favourite packages for spatial data in R!
 
-### Final thoughts
+## Final thoughts
 
 I definitely learnt a few new ways to visualise spatial data in the last 30 days, including some new packages and functions. Thanks to [Topi Tjukanov](https://twitter.com/tjukanov) for creating this challenge a few years ago, and well done to everyone who participated in this year's challenge whether you made one or thirty maps in November!

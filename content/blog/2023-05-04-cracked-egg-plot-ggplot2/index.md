@@ -16,7 +16,7 @@ math: true
 
 You can't make an R plot without breaking eggs... that's how the saying goes, right? A recent [#TidyTuesday data set](https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-04-11/readme.md) explored US egg production and, thanks to an excellent suggestion from [Tanya Shapiro](https://twitter.com/tanya_shapiro/status/1645419735096389632) to create a plot in the style of the [Visual Capitalist](https://www.visualcapitalist.com/cp/charted-u-s-egg-prices-more-than-double-in-2022/) US egg prices chart, and [Deepali Kank](https://twitter.com/DeepaliKank/status/1646145264103706625)'s incredible version of it, I decided to figure out how to crack an egg in R.
 
-### Making the egg
+## Making the egg
 
 First things first, we need to make an egg! The equation of an egg, looks a bit like this:
 
@@ -80,7 +80,7 @@ egg_data <- tibble::tibble(
 
 There are other ways to flip the axis, including by changing the scales in {ggplot2}, but this approach will make the next steps a little bit easier.
 
-### Transforming the egg
+## Transforming the egg
 
 Now we need to decide where the egg shape will be cracked into two. There's a couple of things we need to think about here:
 
@@ -164,7 +164,7 @@ This involved *a lot* of trial and error to pick the values I was happy with. Yo
 <img width="70%" src="https://raw.githubusercontent.com/nrennie/nrennie.rbind.io/main/content/blog/2023-05-04-cracked-egg-plot-ggplot2/makingof.gif" alt="gif showing process of choosing parameters to make plot">
 </p>
 
-### Cracking the egg
+## Cracking the egg
 
 Now comes the slightly tricky part: we need to *crack* the egg. There are two things we want here:
 
@@ -303,7 +303,7 @@ ggsave("final.png", units = "in", width = 4, height = 6)
 
 It's not identical to the Visual Capitalist version, but you should now have all the ingredients you need to crack an egg with R!
 
-### A word of caution
+## A word of caution
 
 Although this was a fun exercise in figuring out how to make this type of chart from a technical perspective, I don't think it's an easy to interpret infographic for a couple of reasons. I didn't include an x or y axis here (although the Visual Capitalist original does), so it's hard to figure out where the zero line is. It's not clear which element of the chart is representing the data: the height of the line above the bottom of the egg? the area of the egg shape? If I simply wanted to clearly communicate the data, the line chart alone probably would have sufficed. 
 

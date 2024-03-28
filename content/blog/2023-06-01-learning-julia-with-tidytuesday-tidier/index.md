@@ -17,11 +17,11 @@ Learning a new programming language can be tricky, and it can sometimes lead to 
 
 I dabbled in Julia during [Advent of Code](https://github.com/nrennie/advent_of_code) last year, and wanted to learn a little but more. So when I noticed that [Karandeep Singh](https://github.com/kdpsingh) had started developing [Tidier.jl](https://github.com/TidierOrg/Tidier.jl) - a Julia implementation of the {tidyverse} - I was very keen to give it a go! So I started *#JuliaTuesday* - where I used the data sets from [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), but performed the data wrangling and visualisation in Julia instead of R. After 10 weeks, I wanted to share what I'd learned.
 
-### What is Julia?
+## What is Julia?
 
 Let's back up a second. What is Julia? [Julia](https://julialang.org/) is an high-level, general-purpose, open source programming language. One of the main differences between Julia and R is that Julia is a compiled language, whereas R is an interpreted language (as is Python). This means it's likely to be faster than R, and so it piqued my interest. I'm not going to go into the depths of R versus Julia here - plenty of those blog posts already exist! What I want to talk about is Tidier.jl!
 
-### Tidier.jl
+## Tidier.jl
 
 [Tidier.jl](https://github.com/TidierOrg/Tidier.jl) is a Julia implementation of the {tidyverse}. One of its aims is to stick as closely to {tidyverse} syntax as possible -  which makes it reasonably straightforward to get started as an R user. In Julia, we can install Tidier.jl using:
 
@@ -76,7 +76,7 @@ plot_data <- production |>
 
 The key difference here is *chaining* in Julia. In practice, add an `@` before each function, rather than a `|>`. The other difference here is that we specify when to `begin` and `end` the chain, but otherwise - the similarities are striking.
 
-### Data visualisation in Julia
+## Data visualisation in Julia
 
 There are a lot of different plotting packages in Julia, but the one I found myself using most often was [AlgebraOfGraphics.jl](https://aog.makie.org/stable/). AlgebraOfGraphics.jl a a data visualisation language for Julia, that's built on the idea of combining different building blocks (using `+` and `*`) to make plots. The principles are similar to {ggplot2} - where plots are made of *layers*. There's even a `theme_ggplot2()` function included with AlgebraOfGraphics.jl, if you want to stick with the classic theme.
 
@@ -126,7 +126,7 @@ using TidierPlots
 
 It's so similar to {ggplot2} that you can *almost* copy and paste your code - and just add an `@` at the start of each line! TidierPlots.jl is one of the most exciting developments in Julia, and if you're familiar with {ggplot2} (or indeed AlgebraOfGraphics.jl), the learning curve is very, very gentle. 
 
-### Final thoughts
+## Final thoughts
 
 I really enjoyed getting to grips with Tidier.jl and found it an easier way to start learning Julia, through using concepts and functions that were already familiar to me as an R user. Of course, being proficient in Tidier.jl doesn't make me proficient in Julia as a whole, but I did get introduced to some of the differences and quirks of Julia along the way. I'm definitely keen to use a little bit more Julia in my work, including with Quarto and in combination with R, through the [{JuliaCall}](https://cran.r-project.org/web/packages/JuliaCall/index.html) package.
 
