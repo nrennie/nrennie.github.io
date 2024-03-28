@@ -20,6 +20,8 @@ links:
   url: https://github.com/nrennie/aRt
 ---
 
+## Project description
+
 Generative art is the practice of creating artwork using code. When the programming language of choice is R, it's often termed *Rtistry* or *aRt*.
 
 
@@ -126,10 +128,16 @@ Generative art is the practice of creating artwork using code. When the programm
   
   
 {{< detail-tag "Code" >}}
-The generative artwork on this page can be reproduced using my {aRt} package on [GitHub](https://github.com/nrennie/aRt), which you can install in R using: 
+Most of the generative artwork on this page can be reproduced using my {aRt} package on [GitHub](https://github.com/nrennie/aRt), which you can install in R using: 
 
 ```r
 remotes::install_github("nrennie/aRt")
 library(aRt)
 ```
 {{< /detail-tag >}}
+
+## Related blog posts
+
+* [Best (artistic) practices in R](https://nrennie.rbind.io/blog/best-artistic-practices-in-r/)
+
+* [Making art in Python with plotnine](https://nrennie.rbind.io/blog/making-art-python-plotnine/)

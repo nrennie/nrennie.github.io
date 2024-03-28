@@ -77,6 +77,10 @@ Overall, a key finding of this research is that functional data analysis is a ve
 **Detecting demand outliers in transport systems** <br>
 **N. Rennie**. *PhD Thesis*. 2021. doi: [doi.org/10.17635/lancaster/thesis/1448](https://doi.org/10.17635/lancaster/thesis/1448).
 
+## Related blog posts
+
+* [Detecting demand outliers in transport systems](https://nrennie.rbind.io/blog/detecting-demand-outliers-in-transport-systems/)
+
 ## Collaborators
 
 Catherine Cleophas; Adam M. Sykulski; Florian Dost; Phillip Bartke; Valentin Wagner.

@@ -2,7 +2,7 @@
 title: "Publications"
 subtitle: ""
 excerpt: "My research interests lie in statistics and data science, with a focus on applications to health data."
-date: 2022-10-01
+date: 2024-03-28
 weight: 1
 author: "Nicola Rennie"
 draft: false

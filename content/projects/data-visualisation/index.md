@@ -12,6 +12,8 @@ layout: single
 image: featured.jpg
 ---
 
+## Project description
+
 Data visualisation is essential for exploratory analysis, and for effectively communicating results. Although I primarily use R for data visualisation, I also have experience of using Python, Tableau, rawgraphs, Inkscape, and Figma. I began researching what makes an effective data visualisation during my PhD when trying to visualise large volumes of data, and started contributing to #TidyTuesday!
 
 {{< data-viz-odd "/portfolio/tidytuesday/" "https://raw.githubusercontent.com/nrennie/tidytuesday/main/2023/2023-02-07/20230207.png" "See more #TidyTuesday">}}
@@ -52,3 +54,11 @@ Note that the text in the visualisations is taken from the original charts and u
 [Tableau](https://www.tableau.com/en-gb) is an interactive data visualization tool, used to make plots, dashboards, and presentations of data. Although I primarily use R to create plots and dashboards for visualising data, I've recently started to explore less-programmatic ways of visualising data. My Tableau data visualisations and dashboards can be found on my [Tableau Public profile](https://public.tableau.com/app/profile/nicola.rennie/). In order to improve my Tableau skills, I've started visualising #TidyTuesday data sets in Tableau as well as in R.
 {{< /data-viz-even >}}
 
+## Related publications
+
+**Best practices for data visualisation.** <br>
+A. Krause, **N. Rennie**. B. Tarran. *Royal Statistical Society (online)*. 2023. Link: [royal-statistical-society.github.io/datavisguide](https://royal-statistical-society.github.io/datavisguide/).
+
+## Related blog posts
+
+* [Designing #TidyTuesday visualisations for mobile (with Quarto)](https://nrennie.rbind.io/blog/designing-tidytuesday-visualisations-for-mobile-with-quarto/)
